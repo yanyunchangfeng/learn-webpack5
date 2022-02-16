@@ -4,13 +4,16 @@
 
 ## 介绍
 
-你好，我是徐晓东，笔名[燕云长风](https://yanyunchangfeng.github.io)。大漠穷秋于 2019-03-16 21:22 赠此笔名。  
+你好，我是[燕云长风](https://yanyunchangfeng.github.io)。大漠穷秋于 2019-03-16 21:22 赠此笔名。  
 寓意：结合李白著名的边塞诗《关山月》取【燕云长风】—— 长风几万里，吹度玉门关。
 
 ## 这是 webpack5 新特性的学习实践
 
 1. [持久化缓存](./config/webpack.dev.js)
 2. [资源模块](./config/webpack.common.js)
+3. [URIs](./src/app/lesson1/index.ts)
+4. [nodejs polyfill](./config/webpack.prod.js) [crypto-js](./src/app/lesson3/index.ts)
+5. [更强大的 tree shaking](./config/webpack.common.js) [sideEffects](./package.json)
 
 ## 我的个人博客
 

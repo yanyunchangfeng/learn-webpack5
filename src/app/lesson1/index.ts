@@ -1,1 +1,3 @@
-console.log('this is lesson14444444444444433336666622222rrr6444444')
+
+// import data from "data:text/javascript,export default 'title'";
+// console.log(data)

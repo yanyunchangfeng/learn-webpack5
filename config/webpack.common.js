@@ -2,11 +2,18 @@ const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 module.exports={
     context: path.join(process.cwd(),'src','app'),
-    entry:'./index.ts',
+    entry: {
+        main:'./index.ts'// 可以配置多个
+    },
     output: {
         path: path.join(process.cwd(),'dist'),
-        filename: '[name].bundle.js',
-        chunkFilename: "[name].bundle.js"
+        filename: '[name].bundle.js',//入口代码块文件名的生成规则
+        chunkFilename: "[name].bundle.js"//非入口模块的生成规则
+    },
+    optimization: {
+        usedExports:true,// 标记使用到的导出
+        // moduleIds: 'natural', named  deterministic size // 模块名称的生成规则 deterministic 生产模式默认值
+        // chunkIds:'natural' // named  deterministic size //代码块名称的生成规则
     },
     resolve:{
         extensions:['.js','.ts']
@@ -47,6 +54,10 @@ module.exports={
                         maxSize:4*1024
                     }
                 }
+            },
+            {
+                test: /\.css/,
+                use:['style-loader','css-loader']
             }
         ]
     },
