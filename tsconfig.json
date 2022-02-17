@@ -9,9 +9,14 @@
         "lib": ["es5", "es2015", "es2016","es2017","es2018" ,"dom", "esnext"],
         "target": "es2020",
         "sourceMap": true,
+        "jsx": "react",
         "typeRoots": ["./src/@types"],
+        "baseUrl": ".",
+        "paths": {
+           "src/*":["./src/*"] 
+        },
         // "preserveConstEnums": true, // 编译结果保留const定义的常量枚举 默认关闭
         "experimentalDecorators": true
     },
-    "include": ["./src/**/*.ts"]
+    "include": ["./src/**/*"]
 }

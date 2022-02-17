@@ -12,8 +12,10 @@
 1. [持久化缓存](./config/webpack.dev.js)
 2. [资源模块](./config/webpack.common.js)
 3. [URIs](./src/app/lesson1/index.ts)
-4. [nodejs polyfill](./config/webpack.prod.js) [crypto-js](./src/app/lesson3/index.ts)
-5. [更强大的 tree shaking](./config/webpack.common.js) [sideEffects](./package.json)
+4. [moduleIds 和 chunkIds 的优化](./config/webpack.common.js)
+5. [nodejs polyfill](./config/webpack.prod.js) [crypto-js](./src/app/lesson3/index.ts)
+6. [更强大的 tree shaking](./config/webpack.common.js) [sideEffects](./package.json)
+7. [TopAwait React.lazy](./src/app/lesson8/index.ts)
 
 ## 我的个人博客
 

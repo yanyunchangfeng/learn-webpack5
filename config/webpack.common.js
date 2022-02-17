@@ -16,7 +16,13 @@ module.exports={
         // chunkIds:'natural' // named  deterministic size //代码块名称的生成规则
     },
     resolve:{
-        extensions:['.js','.ts']
+        extensions: ['.js', '.ts'],
+        alias: {
+            src: path.resolve(__dirname, '../src'),
+        }
+    },
+    experiments: {
+        topLevelAwait: true, // 此处为新增配置
     },
     module:{
         rules:[
@@ -30,7 +36,7 @@ module.exports={
                 ]
             },
             {
-                test:/\.ts$/,
+                test:/\.tsx?$/,
                 loader:'ts-loader'
             },
             {
