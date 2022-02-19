@@ -11,7 +11,7 @@ module.exports={
         chunkFilename: "[name].bundle.js"//非入口模块的生成规则
     },
     optimization: {
-        usedExports:true,// 标记使用到的导出
+        // usedExports:true,// 标记使用到的导出
         // moduleIds: 'natural', named  deterministic size // 模块名称的生成规则 deterministic 生产模式默认值
         // chunkIds:'natural' // named  deterministic size //代码块名称的生成规则
     },

@@ -10,7 +10,8 @@
         "target": "es2020",
         "sourceMap": true,
         "jsx": "react",
-        "typeRoots": ["./src/@types"],
+        "typeRoots": ["./node_modules/@types","./src/@types"],
+        "types": ["node","tapable"],
         "baseUrl": ".",
         "paths": {
            "src/*":["./src/*"] 
