@@ -1,12 +1,15 @@
-import png from 'src/assets/img/yanyunchangfeng.png'
-// import 'src/app/lesson1'
-import('./lesson2');
-import './lesson3';
+import png from 'src/assets/img/yanyunchangfeng.png';
+import 'src/app/lesson1';
+import('src/app/lesson2');
+import 'src/app/lesson3';
 import { fn1 } from 'src/app/lesson4'
-import './lesson6'
+import 'src/app/lesson6'
+import 'src/app/lesson7'
 import 'src/app/lesson7/index.css'
-console.log(fn1)
-import TreeShaking from './lesson8'
-import './lesson9'
+console.log('fn1',fn1)
+console.log('process.env.NODE_ENV',process.env.NODE_ENV)
+console.log('AUTHOR',AUTHOR)
+import TreeShaking from 'src/app/lesson8'
+import 'src/app/lesson9'
 const tree = new TreeShaking()
-console.log('pngeee33331234567777ee',png)
+console.log('yanyunchagnfeng png',png)

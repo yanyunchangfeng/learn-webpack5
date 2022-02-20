@@ -1,2 +1,2 @@
-console.log('3444')
-export default 2
+console.log('this is dynamic import module lesson2')
+export default 'lesson2'

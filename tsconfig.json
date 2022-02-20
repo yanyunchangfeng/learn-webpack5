@@ -6,17 +6,15 @@
         "allowJs": true,
         "module": "esnext",
         "strict": true,
-        "lib": ["es5", "es2015", "es2016","es2017","es2018" ,"dom", "esnext"],
         "target": "es2020",
         "sourceMap": true,
         "jsx": "react",
         "typeRoots": ["./node_modules/@types","./src/@types"],
-        "types": ["node","tapable"],
         "baseUrl": ".",
         "paths": {
            "src/*":["./src/*"] 
         },
-        // "preserveConstEnums": true, // 编译结果保留const定义的常量枚举 默认关闭
+        "preserveConstEnums": true, // 编译结果保留const定义的常量枚举 默认关闭
         "experimentalDecorators": true
     },
     "include": ["./src/**/*"]

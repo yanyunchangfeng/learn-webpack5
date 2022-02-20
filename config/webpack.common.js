@@ -1,5 +1,6 @@
 const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 module.exports={
     context: path.join(process.cwd(),'src','app'),
     entry: {
@@ -37,7 +38,8 @@ module.exports={
             },
             {
                 test:/\.tsx?$/,
-                loader:'ts-loader'
+                loader: 'ts-loader',
+                // sideEffect:false
             },
             {
                 test: /\.png$/, 
@@ -71,6 +73,9 @@ module.exports={
        new htmlWebpackPlugin({
            template:path.join(process.cwd(),'src/index.temp.html'),
            favicon:path.join(process.cwd(),'src/assets/img/yanyunchangfeng.png'),
+       }),
+        new webpack.DefinePlugin({
+           AUTHOR:JSON.stringify('yanyunchangfeng')
        })
     ] 
 }
