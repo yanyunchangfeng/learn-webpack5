@@ -24,6 +24,11 @@
 3. [SyncBailHook](./src/app/lesson9/SyncBailHook.ts)
 4. [SyncLoopHook](./src/app/lesson9/SyncLoopHook.ts)
 5. [SyncWaterfallHook](./src/app/lesson9/SyncWaterfallHook.ts)
+6. [AsyncSeriesHook](./src/app/lesson9/AsyncSeriesHook.ts)
+7. [AsyncSeriesBailHook](./src/app/lesson9/AsyncSeriesBailHook.ts)
+8. [AsyncParallelHook](./src/app/lesson9/AsyncParallelHook.ts)
+9. [AsyncParallelBailHook](./src/app/lesson9/AsyncParallelBailHook.ts)
+10. [AsyncWaterfallHook](./src/app/lesson9/AsyncWaterfallHook.ts)
 
 ## 我的个人博客
 
