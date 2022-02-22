@@ -16,6 +16,7 @@
 5. [nodejs polyfill](./config/webpack.prod.js) [crypto-js](./src/app/lesson3/index.ts)
 6. [更强大的 tree shaking](./config/webpack.common.js) [sideEffects](./package.json)
 7. [TopAwait React.lazy](./src/app/lesson8/index.ts)
+8. [webpack5 use Web Workers without worker-loader](./src/app/lesson10/index.ts)
 
 ## webpack tapable Hook
 
