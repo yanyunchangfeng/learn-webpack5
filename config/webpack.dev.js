@@ -15,7 +15,6 @@ module.exports = merge(commonConfig, {
         type: 'memory',// memory filesystem,  // 默认是在内存中存储
         // cacheDirectory:path.resolve(__dirname,'../node_modules/.cache/webpack') // 默认缓存目录
     },
-    watch:true, // 增量编译
     devServer: {
         port: 3001,
         compress:true, //启动压缩 gzip
