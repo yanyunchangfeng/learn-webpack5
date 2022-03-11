@@ -14,7 +14,7 @@
 3. [URIs](./src/app/lesson1/index.ts)
 4. [moduleIds 和 chunkIds 的优化](./config/webpack.common.js)
 5. [nodejs polyfill](./config/webpack.prod.js) [crypto-js](./src/app/lesson3/index.ts)
-6. [更强大的 tree shaking](./config/webpack.common.js) [sideEffects](./package.json)
+6. [更强大的 tree shaking](./config/webpack.common.js) [sideEffects](./package.json) [PURE magic comment](./src/app/lesson11/index.ts)
 7. [TopAwait React.lazy](./src/app/lesson8/index.ts)
 8. [webpack5 use Web Workers without worker-loader](./src/app/lesson10/index.ts)
 
