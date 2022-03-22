@@ -31,6 +31,11 @@
 9. [AsyncParallelBailHook](./src/app/lesson9/AsyncParallelBailHook.ts)
 10. [AsyncWaterfallHook](./src/app/lesson9/AsyncWaterfallHook.ts)
 
+# webpack 的工作流程
+
+[webpack flow](webpack.flow.js)  
+[webpack md](webpack.md)
+
 ## 我的个人博客
 
 - [燕云长风](https://yanyunchangfeng.github.io)
