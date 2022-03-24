@@ -20,7 +20,7 @@ class Compiler{
         // 根据配置中的entry找出所有的入口文件
         let entry = path.join(this.options.context, this.options.entry)
         // 从入口文件触发，调用所有配置的 Loader 对模块进行编译，再找出该模块依赖的模块，
-        // 再递归本步骤知道所有入口依赖的文件都经过了本步骤的处理;
+        // 再递归本步骤直到所有入口依赖的文件都经过了本步骤的处理;
         // 1. 读取模块内容
         // let sum = (a,b)=> a+b; let title = require('title')
         let entryContent = fs.readFileSync(entry, 'utf8');
@@ -34,7 +34,7 @@ class Compiler{
         // 再递归本步骤知道所有入口依赖的文件都经过了本步骤的处理;
         // 1. 读取模块内容
         // let sum = (a,b)=> a+b; let title = require('title')
-        let titleContent = fs.readFileSync(entry, 'utf8');
+        let titleContent = fs.readFileSync(title, 'utf8');
         let titleSource = babelLoader(titleContent);
         // 模块module chunk代码块 file bundle 文件的关系
         let titleModule = { id: entry, source: titleSource };
@@ -47,7 +47,7 @@ class Compiler{
             file: this.options.output.filename,
             source: 
             `
-              (function(){
+              (function(module){
 
               })()
             `
@@ -73,4 +73,12 @@ if (options.plugins && Array.isArray(options.plugins)) {
     for (const plugin of options.plugins) {
         plugin.apply(compiler)
     }
+}
+// 确定入口：根据配置中的entry找出所有的入口文件
+compiler.run();
+// es6编译成es5
+function babelLoader(source) {
+    return `
+      let sum = function sum(a,b)=> a+b;
+   `
 }
