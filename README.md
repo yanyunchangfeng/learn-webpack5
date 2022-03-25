@@ -17,6 +17,7 @@
 6. [更强大的 tree shaking](./config/webpack.common.js) [sideEffects](./package.json) [PURE magic comment](./src/app/lesson11/index.ts)
 7. [TopAwait React.lazy](./src/app/lesson8/index.ts)
 8. [webpack5 use Web Workers without worker-loader](./src/app/lesson10/index.ts)
+9. [webpack5 use asyncWebAssembly without wasm-loader](./src/app/lesson12/index.ts) [webpack asyncWebAssembly](./config/webpack.common.js)
 
 ## webpack tapable Hook
 

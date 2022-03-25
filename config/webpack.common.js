@@ -30,6 +30,7 @@ module.exports = {
     },
     experiments: {
         topLevelAwait: true, // 此处为新增配置
+        asyncWebAssembly: true,
     },
     module: {
         rules: [
@@ -59,6 +60,10 @@ module.exports = {
             {
                 test: /\.txt$/,
                 type: 'asset/source' // 对标raw-loader
+            },
+            {
+                test: /\.wasm$/,
+                type: 'webassembly/async' // 对标wasm 模块
             },
             {
                 test: /\.jpg$/,

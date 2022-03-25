@@ -5,7 +5,7 @@
         "esModuleInterop": true,
         "allowJs": true,
         "module": "esnext",
-        "strict": false,
+        "strict": true,
         "target": "es2020",
         "lib": [
             "es2015",

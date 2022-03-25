@@ -7,6 +7,7 @@ import 'src/app/lesson6'
 import 'src/app/lesson7'
 import 'src/app/lesson7/style'
 import 'src/app/lesson10'
+import 'src/app/lesson12'
 import { foo } from 'src/app/lesson11'
 console.log('foo', foo)
 console.log('fn1', fn1)
@@ -32,10 +33,10 @@ let element: any = document.querySelector('div');
 // }
 
 // window.requestAnimationFrame(step);
-
+/*
 window.addEventListener("load", async () => {
     let { instance } = await WebAssembly.instantiateStreaming(
-        fetch("./wasm/dip.wasm")
+        fetch("wasm/dip.wasm")
     );
     // let {
     //     cppConvFilter,
@@ -251,3 +252,4 @@ window.addEventListener("load", async () => {
     });
 
 });
+*/
