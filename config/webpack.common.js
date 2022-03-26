@@ -3,7 +3,10 @@ const htmlWebpackPlugin = require('html-webpack-plugin')
 const HelloWorldPlugin = require('./helloworld')
 const CopyPlugin = require("copy-webpack-plugin");
 const webpack = require('webpack')
-module.exports = {
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin')
+const smw = new SpeedMeasureWebpackPlugin()
+module.exports = smw.wrap({
     context: path.join(process.cwd(), 'src', 'app'),
     entry: {
         main: './index.ts',// 可以配置多个
@@ -27,6 +30,11 @@ module.exports = {
         alias: { // 别名  注意tsconfig.json˙中的paths也要对应配置
             src: path.resolve(__dirname, '../src'),
         }
+    },
+    resolveLoader: { // 用于配置解析loader时的resolve 配置,默认的配置
+        modules: ['node_modules'],
+        extensions: ['.js', '.json'],
+        mainFields:['loader','main']
     },
     experiments: {
         topLevelAwait: true, // 此处为新增配置
@@ -81,6 +89,12 @@ module.exports = {
         ]
     },
     plugins: [
+        new BundleAnalyzerPlugin(
+            {
+                analyzerMode: "disabled",// 不启动展示打包报告的http服务器
+                generateStatsFile:true,// 是否生成stats.json文件
+            }
+        ),
         new htmlWebpackPlugin({
             template: path.join(process.cwd(), 'src/index.temp.html'),
             filename: 'index.html',
@@ -106,4 +120,4 @@ module.exports = {
             },
         }),
     ]
-}
+})

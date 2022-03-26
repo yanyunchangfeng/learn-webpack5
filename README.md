@@ -37,6 +37,14 @@
 [webpack flow](webpack.flow.js)  
 [webpack md](webpack.md)
 
+# 如何对 bundle 体积进行监控和分析
+
+[webpack-bundle-analyzer](./config/webpack.common.js)
+
+# 如何提高 webpack 的构建速度
+
+[speed-measure-webpack-plugin](./config/webpack.common.js)
+
 ## 我的个人博客
 
 - [燕云长风](https://yanyunchangfeng.github.io)

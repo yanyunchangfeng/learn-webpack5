@@ -1,2 +1,0 @@
-/*! For license information please see 755.bundle.js.LICENSE.txt */
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[755],{755:(s,e,l)=>{l.r(e),l.d(e,{default:()=>o}),console.log("this is dynamic import module lesson2");const o="lesson2"}}]);

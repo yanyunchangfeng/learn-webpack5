@@ -1,2 +1,0 @@
-/*! For license information please see 380.bundle.js.LICENSE.txt */
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[380],{8380:(e,o,s)=>{s.r(o),s.d(o,{default:()=>t}),console.log("this is dynamic import module other module by Top Await");const t=Math.random()}}]);
