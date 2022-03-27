@@ -5,8 +5,12 @@ const CopyPlugin = require("copy-webpack-plugin");
 const webpack = require('webpack')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin')
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const smw = new SpeedMeasureWebpackPlugin()
-module.exports = smw.wrap({
+const os = require('os')
+// console.log(os.cpus(),'os cups')
+// module.exports = smw.wrap({
+module.exports = {
     context: path.join(process.cwd(), 'src', 'app'),
     entry: {
         main: './index.ts',// 可以配置多个
@@ -53,7 +57,20 @@ module.exports = smw.wrap({
             },
             {
                 test: /\.tsx?$/,
-                loader: 'ts-loader',
+                use: [
+                    {
+                        loader: 'thread-loader',
+                        options: {
+                            workers:os.cpus().length -1
+                        }
+                    },
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            happyPackMode: true
+                        }
+                    }
+                ]
                 // sideEffect:false
             },
             {
@@ -86,8 +103,16 @@ module.exports = smw.wrap({
                 test: /\.css/,
                 use: ['style-loader', 'css-loader']
             }
-        ]
+        ],
+        // noParse: /lodash/, //正则表达式
+        // module.noParse字段，可以用于配置哪些模块文件的内容不需要进行解析
+        // 不需要解析依赖(如无依赖)的第三方大型库等，可以通过这个字段来配置，以提高整体的构建速度
+        noParse(content) {
+            // console.log(content,'content')
+            return /lodash/.test(content)
+        }
     },
+    stats:'errors-only',// 只在错误时输出
     plugins: [
         new BundleAnalyzerPlugin(
             {
@@ -110,6 +135,9 @@ module.exports = smw.wrap({
         new webpack.DefinePlugin({
             AUTHOR: JSON.stringify('yanyunchangfeng')
         }),
+        new FriendlyErrorsWebpackPlugin(),
+        // .日志太多太少都不美观
+        // .可以修改stats
         new HelloWorldPlugin(),
         new CopyPlugin({
             patterns: [
@@ -119,5 +147,12 @@ module.exports = smw.wrap({
                 concurrency: 100,
             },
         }),
+        new webpack.IgnorePlugin({
+            resourceRegExp: /^\.\/locale$/,
+            contextRegExp: /moment$/,
+          })
+        // IgnorePlugin用于忽略某些特定的模块，让webpack不把这些指定的模块打包进去
+        // 第一个是匹配引入模块路径的正则表达式
+        // 第二个是匹配模块的对应上下文，即所在目录名
     ]
-})
+}
