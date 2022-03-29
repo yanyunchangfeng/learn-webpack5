@@ -38,3 +38,23 @@
   | hash | 每次 webpack 构建时生成一个唯一的 hash 值|
   | chunkhash | 根据 chunk 生成 hash 值，来源于同一个 chunk，则 hash 值就一样|
   | contenthash| 根据内容生成 hash 值，文件内容相同 hash 值就相同|
+
+4. source map 的类型
+   | 类型 | 定义|
+   |-----|----|
+   |source-map |原始代码 最好的 sourcemap 质量有完整的结果，但是会很慢 |
+   |eval-source-map |原始代码 同样道理 但是最高的质量和最低的性能 |
+   |cheap-module-eval-source-map |原始代码（只有行内） 同样道理 但是最高的质量和更低的性能 |
+   |eval|生成代码（行内）每个模块都被 eval 执行，并且 sourcemap 作为 eval 的一个 dataurl |
+   |cheap-source-map |转换代码（行内）生成的 sourcemap 没有列映射，从 loaders 生成的 sourcemap 没有被使用|
+   |cheap-module-source-map |原始代码（只有行内）与上面一样除了每行特点的从 loader 中进行映射|
+
+看似配置项很多，其实只有五个关键字 eval、source-map、cheap、module 和 inline 的任意组合
+
+| 关键字     | 含义                                                                               |
+| ---------- | ---------------------------------------------------------------------------------- |
+| eval       | 使用 eval 包裹模块代码                                                             |
+| source-map | 产生 map 文件                                                                      |
+| cheap      | 不包含列信息（关于列信息的解释下面会有详细介绍）也不包含 loaders 的 sourcemap      |
+| module     | 包含 loader 的 sourcemap（比如 jsx to js，babel 的 sourcemap），否则无法定义源文件 |
+| inline     | 将.map 作为 DataURI 嵌入，不单独生成 map 文件                                      |

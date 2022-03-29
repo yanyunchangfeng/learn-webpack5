@@ -52,6 +52,7 @@
 # hash
 
 [hash,chunkhash,contenthash](./webpack.md)
+[source map](./webpack.md)
 
 ## 我的个人博客
 

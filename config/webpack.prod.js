@@ -4,9 +4,15 @@ const webpack = require('webpack')
 const { merge } = require('webpack-merge');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 module.exports = merge(commonConfig, {
     devtool: 'cheap-module-source-map',
     mode: process.env.NODE_ENV,
+    optimization: {
+        // minimize: true,
+        // minimizer: [new TerserPlugin(),new OptimizeCssAssetsPlugin()],
+    },
     cache: {
         type: 'filesystem',// memory filesystem,  // 默认是在内存中存储
         cacheDirectory:path.resolve(__dirname,'../node_modules/.cache/webpack') // 默认缓存目录
