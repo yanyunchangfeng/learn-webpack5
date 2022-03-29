@@ -44,14 +44,14 @@
 # 如何提高 webpack 的构建速度
 
 [speed-measure-webpack-plugin](./config/webpack.common.js)
-[module.noParse](./config/webpack.common.js)
-[IgnorePlugin]](./config/webpack.common.js)
-[friendly-errors-webpack-plugin 日志优化](./config/webpack.common.js)
+[module.noParse](./config/webpack.common.js)  
+[IgnorePlugin](./config/webpack.common.js)  
+[friendly-errors-webpack-plugin 日志优化](./config/webpack.common.js)  
 [thread-loader 多进程处理](./config/webpack.common.js)
 
 # hash
 
-[hash,chunkhash,contenthash](./webpack.md)
+[hash,chunkhash,contenthash](./webpack.md)  
 [source map](./webpack.md)
 
 ## 我的个人博客

@@ -8,7 +8,7 @@ console.log(process.env.NODE_ENV, 'process.env.NODE_ENV')
 // . cross-env用来设置node环境的 process.env.NODE_ENV
 // . DefinePlugin 用来设置模块内的全局变量
 module.exports = merge(commonConfig, {
-    devtool: 'cheap-module-source-map',
+    devtool: 'cheap-eval-module-source-map',
     mode: process.env.NODE_ENV,
     cache: {
         // 不要使用cnpm 来安装模块 会有问题

@@ -58,3 +58,12 @@
 | cheap      | 不包含列信息（关于列信息的解释下面会有详细介绍）也不包含 loaders 的 sourcemap      |
 | module     | 包含 loader 的 sourcemap（比如 jsx to js，babel 的 sourcemap），否则无法定义源文件 |
 | inline     | 将.map 作为 DataURI 嵌入，不单独生成 map 文件                                      |
+
+4.2 如何选择 source map 的类型
+
+- 首先在源代码的列信息是没有意义的，只要有行信息就能完整的建立打包前后代码之间的依赖关系。因此，不管是开发环境还是生产环境都会增加 cheap 来忽略模块打包后的列信息关联
+- 不管是生产环境还是开发环境，我们都需要定位 debug 到最原始的资源，比如定位错误到 jsx，ts 的原始代码，而不是经编译后的 js 代码，所以不会去掉 module 属性
+- 需要生成 map 文件，所以得有 source-map 属性
+- 总结
+  - 开发环境使用：cheap-module-eval-source-map
+  - 生产环境使用：cheap-module-source-map

@@ -1,14 +1,14 @@
 {
-  "hash": "9a03bf07106e54ad9325",
+  "hash": "9ddcf197a5843c7898f3",
   "version": "5.68.0",
-  "time": 2741,
-  "builtAt": 1648541011745,
+  "time": 2698,
+  "builtAt": 1648568899404,
   "publicPath": "auto",
   "outputPath": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/dist",
   "assetsByChunkName": {
     "main": [
       "main.e16a88446e241bf71671css",
-      "main.6ca6c1c5b27f4572c897.js"
+      "main.d040c616d4f7085a07fa.js"
     ],
     "modal": [
       "modal.4a7d507b4e531d0111a2.js"
@@ -100,20 +100,20 @@
     },
     {
       "type": "asset",
-      "name": "main.6ca6c1c5b27f4572c897.js",
-      "size": 9114,
+      "name": "main.d040c616d4f7085a07fa.js",
+      "size": 9134,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "6ca6c1c5b27f4572c897",
+        "contenthash": "d040c616d4f7085a07fa",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "main.6ca6c1c5b27f4572c897.js.LICENSE.txt"
+          "license": "main.d040c616d4f7085a07fa.js.LICENSE.txt"
         },
-        "size": 9114
+        "size": 9134
       },
       "chunkNames": [
         "main"
@@ -125,7 +125,7 @@
       "related": [
         {
           "type": "license",
-          "name": "main.6ca6c1c5b27f4572c897.js.LICENSE.txt",
+          "name": "main.d040c616d4f7085a07fa.js.LICENSE.txt",
           "size": 36,
           "emitted": true,
           "comparedForEmit": false,
@@ -387,9 +387,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 41919,
+      "size": 41939,
       "sizes": {
-        "javascript": 32633,
+        "javascript": 32653,
         "css/mini-extract": 1844,
         "runtime": 7442
       },
@@ -402,10 +402,10 @@
       ],
       "files": [
         "main.e16a88446e241bf71671css",
-        "main.6ca6c1c5b27f4572c897.js"
+        "main.d040c616d4f7085a07fa.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "6929e840d8aa4d669553",
+      "hash": "4bae8158e92c7e21a322",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [],
@@ -422,10 +422,10 @@
           "sizes": {
             "javascript": 498
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
           "name": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
@@ -495,8 +495,8 @@
               "moduleName": "./lesson7/style.scss",
               "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
               "resolvedModule": "./lesson7/style.scss",
-              "type": "harmony side effect evaluation",
-              "active": true,
+              "type": "harmony export imported specifier",
+              "active": false,
               "explanation": "",
               "userRequest": "!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss",
               "loc": "26:0-274",
@@ -509,8 +509,8 @@
               "moduleName": "./lesson7/style.scss",
               "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
               "resolvedModule": "./lesson7/style.scss",
-              "type": "harmony export imported specifier",
-              "active": false,
+              "type": "harmony side effect evaluation",
+              "active": true,
               "explanation": "",
               "userRequest": "!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss",
               "loc": "26:0-274",
@@ -593,8 +593,8 @@
               "moduleName": "./index.ts + 1 modules",
               "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
               "resolvedModule": "./lesson7/style.scss",
-              "type": "harmony side effect evaluation",
-              "active": true,
+              "type": "harmony export imported specifier",
+              "active": false,
               "explanation": "",
               "userRequest": "!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss",
               "loc": "26:0-274",
@@ -607,8 +607,8 @@
               "moduleName": "./index.ts + 1 modules",
               "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
               "resolvedModule": "./lesson7/style.scss",
-              "type": "harmony export imported specifier",
-              "active": false,
+              "type": "harmony side effect evaluation",
+              "active": true,
               "explanation": "",
               "userRequest": "!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss",
               "loc": "26:0-274",
@@ -665,7 +665,6 @@
             "default"
           ],
           "optimizationBailout": [
-            "Statement (VariableDeclaration) with side effects in source code at 4:0-97",
             "ModuleConcatenation bailout: Module uses module.id"
           ],
           "depth": 2
@@ -678,10 +677,10 @@
           "sizes": {
             "javascript": 2318
           },
-          "built": true,
-          "codeGenerated": true,
-          "buildTimeExecuted": true,
-          "cached": false,
+          "built": false,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/api.js",
           "name": "../../node_modules/css-loader/dist/runtime/api.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/api.js",
@@ -693,8 +692,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "issuerName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "issuerName": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
           "issuerPath": [
             {
               "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
@@ -710,18 +709,13 @@
               "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
               "name": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
               "id": 890
-            },
-            {
-              "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-              "name": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "id": null
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": 609,
-          "issuerId": null,
+          "issuerId": 890,
           "chunks": [
             179
           ],
@@ -754,34 +748,6 @@
               "loc": "4:30-57",
               "moduleId": 890,
               "resolvedModuleId": 890
-            },
-            {
-              "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-              "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-              "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
-              "loc": "3:0-95",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-              "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-              "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
-              "loc": "4:30-57",
-              "moduleId": null,
-              "resolvedModuleId": null
             },
             {
               "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/api.js",
@@ -801,8 +767,6 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 7:0-14",
-            "Statement (ExpressionStatement) with side effects in source code at 7:0-102:2",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 3
@@ -815,10 +779,10 @@
           "sizes": {
             "javascript": 688
           },
-          "built": true,
-          "codeGenerated": true,
-          "buildTimeExecuted": true,
-          "cached": false,
+          "built": false,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/sourceMaps.js",
           "name": "../../node_modules/css-loader/dist/runtime/sourceMaps.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/sourceMaps.js",
@@ -830,8 +794,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "issuerName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "issuerName": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
           "issuerPath": [
             {
               "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
@@ -847,18 +811,13 @@
               "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
               "name": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
               "id": 890
-            },
-            {
-              "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-              "name": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "id": null
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": 272,
-          "issuerId": null,
+          "issuerId": 890,
           "chunks": [
             179
           ],
@@ -893,34 +852,6 @@
               "resolvedModuleId": 890
             },
             {
-              "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-              "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-              "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../../../node_modules/css-loader/dist/runtime/sourceMaps.js",
-              "loc": "2:0-112",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-              "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-              "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "../../../node_modules/css-loader/dist/runtime/sourceMaps.js",
-              "loc": "4:58-95",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
               "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/sourceMaps.js",
               "module": "../../node_modules/css-loader/dist/runtime/sourceMaps.js",
               "moduleName": "../../node_modules/css-loader/dist/runtime/sourceMaps.js",
@@ -938,8 +869,6 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 3:0-14",
-            "Statement (ExpressionStatement) with side effects in source code at 3:0-22:2",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 3
@@ -952,10 +881,10 @@
           "sizes": {
             "javascript": 2500
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
           "name": "../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
@@ -1065,8 +994,6 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 75:0-14",
-            "Statement (ExpressionStatement) with side effects in source code at 75:0-104:2",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 2
@@ -1079,10 +1006,10 @@
           "sizes": {
             "javascript": 1005
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/insertBySelector.js",
           "name": "../../node_modules/style-loader/dist/runtime/insertBySelector.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/insertBySelector.js",
@@ -1192,8 +1119,6 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 39:0-14",
-            "Statement (VariableDeclaration) with side effects in source code at 3:0-14",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 2
@@ -1206,10 +1131,10 @@
           "sizes": {
             "javascript": 286
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/insertStyleElement.js",
           "name": "../../node_modules/style-loader/dist/runtime/insertStyleElement.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/insertStyleElement.js",
@@ -1319,8 +1244,6 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 11:0-14",
-            "Statement (ExpressionStatement) with side effects in source code at 11:0-36",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 2
@@ -1333,10 +1256,10 @@
           "sizes": {
             "javascript": 300
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js",
           "name": "../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js",
@@ -1446,8 +1369,6 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 12:0-14",
-            "Statement (ExpressionStatement) with side effects in source code at 12:0-48",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 2
@@ -1460,10 +1381,10 @@
           "sizes": {
             "javascript": 1412
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/styleDomAPI.js",
           "name": "../../node_modules/style-loader/dist/runtime/styleDomAPI.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/styleDomAPI.js",
@@ -1573,8 +1494,6 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 70:0-14",
-            "Statement (ExpressionStatement) with side effects in source code at 70:0-24",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 2
@@ -1587,10 +1506,10 @@
           "sizes": {
             "javascript": 382
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/styleTagTransform.js",
           "name": "../../node_modules/style-loader/dist/runtime/styleTagTransform.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/styleTagTransform.js",
@@ -1700,8 +1619,6 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 16:0-14",
-            "Statement (ExpressionStatement) with side effects in source code at 16:0-35",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 2
@@ -1710,9 +1627,9 @@
           "type": "module",
           "moduleType": "javascript/esm",
           "layer": null,
-          "size": 9756,
+          "size": 9776,
           "sizes": {
-            "javascript": 9756
+            "javascript": 9776
           },
           "built": true,
           "codeGenerated": true,
@@ -1771,9 +1688,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 8170,
+              "size": 8190,
               "sizes": {
-                "javascript": 8170
+                "javascript": 8190
               },
               "built": true,
               "codeGenerated": false,
@@ -1803,7 +1720,9 @@
               "reasons": [],
               "usedExports": [],
               "providedExports": [],
-              "optimizationBailout": [],
+              "optimizationBailout": [
+                "Statement (ExpressionStatement) with side effects in source code at 255:0-20"
+              ],
               "depth": 0
             },
             {
@@ -1814,10 +1733,10 @@
               "sizes": {
                 "javascript": 1586
               },
-              "built": true,
+              "built": false,
               "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
               "name": "./lesson7/style.scss",
               "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
@@ -1865,9 +1784,7 @@
               "providedExports": [
                 "default"
               ],
-              "optimizationBailout": [
-                "Statement (VariableDeclaration) with side effects in source code at 12:0-17"
-              ],
+              "optimizationBailout": [],
               "depth": 1
             }
           ]
@@ -1880,10 +1797,10 @@
           "sizes": {
             "javascript": 13488
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson12/index.ts",
           "name": "./lesson12/index.ts",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson12/index.ts",
@@ -1932,7 +1849,6 @@
           "usedExports": [],
           "providedExports": null,
           "optimizationBailout": [
-            "Statement (ExpressionStatement) with side effects in source code at 2:0-174:3",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 1
@@ -1944,10 +1860,10 @@
           "sizes": {
             "css/mini-extract": 1844
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "css|/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss|0",
           "name": "css ../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
@@ -2453,7 +2369,7 @@
       ]
     },
     {
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": true,
       "recorded": false,
@@ -2487,10 +2403,10 @@
           "sizes": {
             "javascript": 47
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/modal.ts",
           "name": "./modal.ts",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/modal.ts",
@@ -2533,7 +2449,6 @@
           "usedExports": [],
           "providedExports": null,
           "optimizationBailout": [
-            "Statement (ExpressionStatement) with side effects in source code at 2:0-26",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0
@@ -2550,7 +2465,7 @@
       ]
     },
     {
-      "rendered": true,
+      "rendered": false,
       "initial": false,
       "entry": false,
       "recorded": false,
@@ -2588,10 +2503,10 @@
             "javascript": 50,
             "webassembly": 2953
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "webassembly/async|/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/assets/wasm/dip.wasm",
           "name": "../assets/wasm/dip.wasm",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/assets/wasm/dip.wasm",
@@ -2682,9 +2597,9 @@
       "type": "module",
       "moduleType": "javascript/esm",
       "layer": null,
-      "size": 9756,
+      "size": 9776,
       "sizes": {
-        "javascript": 9756
+        "javascript": 9776
       },
       "built": true,
       "codeGenerated": true,
@@ -2742,9 +2657,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 8170,
+          "size": 8190,
           "sizes": {
-            "javascript": 8170
+            "javascript": 8190
           },
           "built": true,
           "codeGenerated": false,
@@ -2773,7 +2688,9 @@
           "reasons": [],
           "usedExports": [],
           "providedExports": [],
-          "optimizationBailout": [],
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 255:0-20"
+          ],
           "depth": 0
         },
         {
@@ -2784,10 +2701,10 @@
           "sizes": {
             "javascript": 1586
           },
-          "built": true,
+          "built": false,
           "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
           "name": "./lesson7/style.scss",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
@@ -2834,9 +2751,7 @@
           "providedExports": [
             "default"
           ],
-          "optimizationBailout": [
-            "Statement (VariableDeclaration) with side effects in source code at 12:0-17"
-          ],
+          "optimizationBailout": [],
           "depth": 1
         }
       ]
@@ -2849,10 +2764,10 @@
       "sizes": {
         "javascript": 47
       },
-      "built": true,
-      "codeGenerated": true,
+      "built": false,
+      "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/modal.ts",
       "name": "./modal.ts",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/modal.ts",
@@ -2894,7 +2809,6 @@
       "usedExports": [],
       "providedExports": null,
       "optimizationBailout": [
-        "Statement (ExpressionStatement) with side effects in source code at 2:0-26",
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 0
@@ -2907,10 +2821,10 @@
       "sizes": {
         "javascript": 1586
       },
-      "built": true,
+      "built": false,
       "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
       "name": "./lesson7/style.scss",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
@@ -2957,9 +2871,7 @@
       "providedExports": [
         "default"
       ],
-      "optimizationBailout": [
-        "Statement (VariableDeclaration) with side effects in source code at 12:0-17"
-      ],
+      "optimizationBailout": [],
       "depth": 1
     },
     {
@@ -2970,10 +2882,10 @@
       "sizes": {
         "javascript": 13488
       },
-      "built": true,
-      "codeGenerated": true,
+      "built": false,
+      "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson12/index.ts",
       "name": "./lesson12/index.ts",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson12/index.ts",
@@ -3021,7 +2933,6 @@
       "usedExports": [],
       "providedExports": null,
       "optimizationBailout": [
-        "Statement (ExpressionStatement) with side effects in source code at 2:0-174:3",
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 1
@@ -3034,10 +2945,10 @@
       "sizes": {
         "javascript": 2500
       },
-      "built": true,
-      "codeGenerated": true,
+      "built": false,
+      "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
       "name": "../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js",
@@ -3146,8 +3057,6 @@
       "usedExports": null,
       "providedExports": null,
       "optimizationBailout": [
-        "CommonJS bailout: module.exports is used directly at 75:0-14",
-        "Statement (ExpressionStatement) with side effects in source code at 75:0-104:2",
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 2
@@ -3160,10 +3069,10 @@
       "sizes": {
         "javascript": 1412
       },
-      "built": true,
-      "codeGenerated": true,
+      "built": false,
+      "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/styleDomAPI.js",
       "name": "../../node_modules/style-loader/dist/runtime/styleDomAPI.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/styleDomAPI.js",
@@ -3272,8 +3181,6 @@
       "usedExports": null,
       "providedExports": null,
       "optimizationBailout": [
-        "CommonJS bailout: module.exports is used directly at 70:0-14",
-        "Statement (ExpressionStatement) with side effects in source code at 70:0-24",
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 2
@@ -3286,10 +3193,10 @@
       "sizes": {
         "javascript": 1005
       },
-      "built": true,
-      "codeGenerated": true,
+      "built": false,
+      "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/insertBySelector.js",
       "name": "../../node_modules/style-loader/dist/runtime/insertBySelector.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/insertBySelector.js",
@@ -3398,8 +3305,6 @@
       "usedExports": null,
       "providedExports": null,
       "optimizationBailout": [
-        "CommonJS bailout: module.exports is used directly at 39:0-14",
-        "Statement (VariableDeclaration) with side effects in source code at 3:0-14",
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 2
@@ -3412,10 +3317,10 @@
       "sizes": {
         "javascript": 300
       },
-      "built": true,
-      "codeGenerated": true,
+      "built": false,
+      "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js",
       "name": "../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js",
@@ -3524,8 +3429,6 @@
       "usedExports": null,
       "providedExports": null,
       "optimizationBailout": [
-        "CommonJS bailout: module.exports is used directly at 12:0-14",
-        "Statement (ExpressionStatement) with side effects in source code at 12:0-48",
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 2
@@ -3538,10 +3441,10 @@
       "sizes": {
         "javascript": 286
       },
-      "built": true,
-      "codeGenerated": true,
+      "built": false,
+      "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/insertStyleElement.js",
       "name": "../../node_modules/style-loader/dist/runtime/insertStyleElement.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/insertStyleElement.js",
@@ -3650,8 +3553,6 @@
       "usedExports": null,
       "providedExports": null,
       "optimizationBailout": [
-        "CommonJS bailout: module.exports is used directly at 11:0-14",
-        "Statement (ExpressionStatement) with side effects in source code at 11:0-36",
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 2
@@ -3664,10 +3565,10 @@
       "sizes": {
         "javascript": 382
       },
-      "built": true,
-      "codeGenerated": true,
+      "built": false,
+      "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/styleTagTransform.js",
       "name": "../../node_modules/style-loader/dist/runtime/styleTagTransform.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/runtime/styleTagTransform.js",
@@ -3776,8 +3677,6 @@
       "usedExports": null,
       "providedExports": null,
       "optimizationBailout": [
-        "CommonJS bailout: module.exports is used directly at 16:0-14",
-        "Statement (ExpressionStatement) with side effects in source code at 16:0-35",
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 2
@@ -3790,10 +3689,10 @@
       "sizes": {
         "javascript": 498
       },
-      "built": true,
-      "codeGenerated": true,
+      "built": false,
+      "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
       "name": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
@@ -3862,8 +3761,8 @@
           "moduleName": "./lesson7/style.scss",
           "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
           "resolvedModule": "./lesson7/style.scss",
-          "type": "harmony side effect evaluation",
-          "active": true,
+          "type": "harmony export imported specifier",
+          "active": false,
           "explanation": "",
           "userRequest": "!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss",
           "loc": "26:0-274",
@@ -3876,8 +3775,8 @@
           "moduleName": "./lesson7/style.scss",
           "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
           "resolvedModule": "./lesson7/style.scss",
-          "type": "harmony export imported specifier",
-          "active": false,
+          "type": "harmony side effect evaluation",
+          "active": true,
           "explanation": "",
           "userRequest": "!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss",
           "loc": "26:0-274",
@@ -3960,8 +3859,8 @@
           "moduleName": "./index.ts + 1 modules",
           "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
           "resolvedModule": "./lesson7/style.scss",
-          "type": "harmony side effect evaluation",
-          "active": true,
+          "type": "harmony export imported specifier",
+          "active": false,
           "explanation": "",
           "userRequest": "!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss",
           "loc": "26:0-274",
@@ -3974,8 +3873,8 @@
           "moduleName": "./index.ts + 1 modules",
           "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
           "resolvedModule": "./lesson7/style.scss",
-          "type": "harmony export imported specifier",
-          "active": false,
+          "type": "harmony side effect evaluation",
+          "active": true,
           "explanation": "",
           "userRequest": "!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss",
           "loc": "26:0-274",
@@ -4032,7 +3931,6 @@
         "default"
       ],
       "optimizationBailout": [
-        "Statement (VariableDeclaration) with side effects in source code at 4:0-97",
         "ModuleConcatenation bailout: Module uses module.id"
       ],
       "depth": 2
@@ -4046,10 +3944,10 @@
         "javascript": 50,
         "webassembly": 2953
       },
-      "built": true,
-      "codeGenerated": true,
+      "built": false,
+      "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "webassembly/async|/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/assets/wasm/dip.wasm",
       "name": "../assets/wasm/dip.wasm",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/assets/wasm/dip.wasm",
@@ -4129,10 +4027,10 @@
       "sizes": {
         "javascript": 688
       },
-      "built": true,
-      "codeGenerated": true,
-      "buildTimeExecuted": true,
-      "cached": false,
+      "built": false,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/sourceMaps.js",
       "name": "../../node_modules/css-loader/dist/runtime/sourceMaps.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/sourceMaps.js",
@@ -4143,8 +4041,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-      "issuerName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+      "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+      "issuerName": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
       "issuerPath": [
         {
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
@@ -4160,18 +4058,13 @@
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
           "name": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
           "id": 890
-        },
-        {
-          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "name": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "id": null
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": 272,
-      "issuerId": null,
+      "issuerId": 890,
       "chunks": [
         179
       ],
@@ -4204,34 +4097,6 @@
           "loc": "4:58-95",
           "moduleId": 890,
           "resolvedModuleId": 890
-        },
-        {
-          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../../../node_modules/css-loader/dist/runtime/sourceMaps.js",
-          "loc": "2:0-112",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../../../node_modules/css-loader/dist/runtime/sourceMaps.js",
-          "loc": "4:58-95",
-          "moduleId": null,
-          "resolvedModuleId": null
         },
         {
           "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/sourceMaps.js",
@@ -4251,8 +4116,6 @@
       "usedExports": null,
       "providedExports": null,
       "optimizationBailout": [
-        "CommonJS bailout: module.exports is used directly at 3:0-14",
-        "Statement (ExpressionStatement) with side effects in source code at 3:0-22:2",
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 3
@@ -4265,10 +4128,10 @@
       "sizes": {
         "javascript": 2318
       },
-      "built": true,
-      "codeGenerated": true,
-      "buildTimeExecuted": true,
-      "cached": false,
+      "built": false,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": true,
       "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/api.js",
       "name": "../../node_modules/css-loader/dist/runtime/api.js",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/api.js",
@@ -4279,8 +4142,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-      "issuerName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+      "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+      "issuerName": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
       "issuerPath": [
         {
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
@@ -4296,18 +4159,13 @@
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
           "name": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
           "id": 890
-        },
-        {
-          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "name": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "id": null
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": 609,
-      "issuerId": null,
+      "issuerId": 890,
       "chunks": [
         179
       ],
@@ -4342,34 +4200,6 @@
           "resolvedModuleId": 890
         },
         {
-          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
-          "loc": "3:0-95",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
-          "loc": "4:30-57",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
           "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/api.js",
           "module": "../../node_modules/css-loader/dist/runtime/api.js",
           "moduleName": "../../node_modules/css-loader/dist/runtime/api.js",
@@ -4387,8 +4217,6 @@
       "usedExports": null,
       "providedExports": null,
       "optimizationBailout": [
-        "CommonJS bailout: module.exports is used directly at 7:0-14",
-        "Statement (ExpressionStatement) with side effects in source code at 7:0-102:2",
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 3
@@ -4400,10 +4228,10 @@
       "sizes": {
         "css/mini-extract": 1844
       },
-      "built": true,
-      "codeGenerated": true,
+      "built": false,
+      "codeGenerated": false,
       "buildTimeExecuted": false,
-      "cached": false,
+      "cached": true,
       "identifier": "css|/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss|0",
       "name": "css ../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
       "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
@@ -4463,115 +4291,6 @@
         "ModuleConcatenation bailout: Module Concatenation is not implemented for CssModule"
       ],
       "depth": 3
-    },
-    {
-      "type": "module",
-      "moduleType": "javascript/auto",
-      "layer": null,
-      "size": 9930,
-      "sizes": {
-        "javascript": 9930
-      },
-      "built": true,
-      "codeGenerated": true,
-      "buildTimeExecuted": true,
-      "cached": false,
-      "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-      "name": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-      "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
-      "cacheable": true,
-      "optional": false,
-      "orphan": true,
-      "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-      "issuerName": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-      "issuerPath": [
-        {
-          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
-          "name": "./index.ts",
-          "id": null
-        },
-        {
-          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/style-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "name": "./lesson7/style.scss",
-          "id": null
-        },
-        {
-          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "name": "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
-          "id": 890
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": null,
-      "issuerId": 890,
-      "chunks": [],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": null,
-          "module": null,
-          "moduleName": null,
-          "resolvedModuleIdentifier": null,
-          "resolvedModule": null,
-          "type": "loader import",
-          "active": true,
-          "explanation": "",
-          "userRequest": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss.webpack[javascript/auto]!=!!!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "loc": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss.webpack[javascript/auto]!=!!!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
-          "moduleId": null,
-          "resolvedModuleId": null
-        }
-      ],
-      "usedExports": false,
-      "providedExports": [
-        "default"
-      ],
-      "optimizationBailout": [
-        "Statement (VariableDeclaration) with side effects in source code at 4:0-97",
-        "ModuleConcatenation bailout: Module uses module.id"
-      ],
-      "depth": null
-    },
-    {
-      "type": "module",
-      "moduleType": "runtime",
-      "layer": null,
-      "size": 267,
-      "sizes": {
-        "runtime": 267
-      },
-      "built": false,
-      "codeGenerated": true,
-      "buildTimeExecuted": true,
-      "cached": false,
-      "identifier": "webpack/runtime/compat get default export",
-      "name": "webpack/runtime/compat get default export",
-      "nameForCondition": null,
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
-      "optional": false,
-      "orphan": true,
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": null,
-      "chunks": [],
-      "assets": [],
-      "reasons": [],
-      "usedExports": [],
-      "providedExports": null,
-      "optimizationBailout": [
-        "ModuleConcatenation bailout: Module Concatenation is not implemented for CompatGetDefaultExportRuntimeModule"
-      ],
-      "depth": null
     },
     {
       "type": "module",
@@ -4641,41 +4360,6 @@
       "usedExports": null,
       "providedExports": [],
       "optimizationBailout": [],
-      "depth": null
-    },
-    {
-      "type": "module",
-      "moduleType": "runtime",
-      "layer": null,
-      "size": 308,
-      "sizes": {
-        "runtime": 308
-      },
-      "built": false,
-      "codeGenerated": true,
-      "buildTimeExecuted": true,
-      "cached": false,
-      "identifier": "webpack/runtime/define property getters",
-      "name": "webpack/runtime/define property getters",
-      "nameForCondition": null,
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
-      "optional": false,
-      "orphan": true,
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": null,
-      "chunks": [],
-      "assets": [],
-      "reasons": [],
-      "usedExports": [],
-      "providedExports": null,
-      "optimizationBailout": [
-        "ModuleConcatenation bailout: Module Concatenation is not implemented for DefinePropertyGettersRuntimeModule"
-      ],
       "depth": null
     },
     {
@@ -4863,41 +4547,6 @@
       },
       "built": false,
       "codeGenerated": true,
-      "buildTimeExecuted": true,
-      "cached": false,
-      "identifier": "webpack/runtime/hasOwnProperty shorthand",
-      "name": "webpack/runtime/hasOwnProperty shorthand",
-      "nameForCondition": null,
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
-      "optional": false,
-      "orphan": true,
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": null,
-      "chunks": [],
-      "assets": [],
-      "reasons": [],
-      "usedExports": [],
-      "providedExports": null,
-      "optimizationBailout": [
-        "ModuleConcatenation bailout: Module Concatenation is not implemented for HasOwnPropertyRuntimeModule"
-      ],
-      "depth": null
-    },
-    {
-      "type": "module",
-      "moduleType": "runtime",
-      "layer": null,
-      "size": 88,
-      "sizes": {
-        "runtime": 88
-      },
-      "built": false,
-      "codeGenerated": true,
       "buildTimeExecuted": false,
       "cached": false,
       "identifier": "webpack/runtime/hasOwnProperty shorthand",
@@ -4997,41 +4646,6 @@
       "type": "module",
       "moduleType": "runtime",
       "layer": null,
-      "size": 274,
-      "sizes": {
-        "runtime": 274
-      },
-      "built": false,
-      "codeGenerated": true,
-      "buildTimeExecuted": true,
-      "cached": false,
-      "identifier": "webpack/runtime/make namespace object",
-      "name": "webpack/runtime/make namespace object",
-      "nameForCondition": null,
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
-      "optional": false,
-      "orphan": true,
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": null,
-      "chunks": [],
-      "assets": [],
-      "reasons": [],
-      "usedExports": [],
-      "providedExports": null,
-      "optimizationBailout": [
-        "ModuleConcatenation bailout: Module Concatenation is not implemented for MakeNamespaceObjectRuntimeModule"
-      ],
-      "depth": null
-    },
-    {
-      "type": "module",
-      "moduleType": "runtime",
-      "layer": null,
       "size": 867,
       "sizes": {
         "runtime": 867
@@ -5111,12 +4725,12 @@
           "size": 1881
         },
         {
-          "name": "main.6ca6c1c5b27f4572c897.js",
-          "size": 9114
+          "name": "main.d040c616d4f7085a07fa.js",
+          "size": 9134
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 10995,
+      "assetsSize": 11015,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -5157,12 +4771,12 @@
           "size": 1881
         },
         {
-          "name": "main.6ca6c1c5b27f4572c897.js",
-          "size": 9114
+          "name": "main.d040c616d4f7085a07fa.js",
+          "size": 9134
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 10995,
+      "assetsSize": 11015,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -5205,8 +4819,8 @@
       "name": "HtmlWebpackCompiler",
       "hash": "ec066caf70e73622c35b",
       "version": "5.68.0",
-      "time": 1528,
-      "builtAt": 1648541010557,
+      "time": 297,
+      "builtAt": 1648568897064,
       "publicPath": "",
       "outputPath": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/dist",
       "assetsByChunkName": {},
@@ -5239,7 +4853,7 @@
       ],
       "chunks": [
         {
-          "rendered": true,
+          "rendered": false,
           "initial": true,
           "entry": true,
           "recorded": false,
@@ -5275,10 +4889,10 @@
               "sizes": {
                 "javascript": 530
               },
-              "built": true,
-              "codeGenerated": true,
+              "built": false,
+              "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/html-loader/dist/runtime/getUrl.js",
               "name": "../../node_modules/html-loader/dist/runtime/getUrl.js",
               "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/html-loader/dist/runtime/getUrl.js",
@@ -5355,8 +4969,6 @@
               "usedExports": null,
               "providedExports": null,
               "optimizationBailout": [
-                "CommonJS bailout: module.exports is used directly at 3:0-14",
-                "Statement (ExpressionStatement) with side effects in source code at 3:0-26:2",
                 "ModuleConcatenation bailout: Module is not an ECMAScript module"
               ],
               "depth": 1
@@ -5369,10 +4981,10 @@
               "sizes": {
                 "javascript": 1582
               },
-              "built": true,
-              "codeGenerated": true,
+              "built": false,
+              "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/html-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/index.temp.html",
               "name": "../../node_modules/html-webpack-plugin/lib/loader.js!../index.temp.html",
               "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/index.temp.html",
@@ -5430,7 +5042,6 @@
                 "default"
               ],
               "optimizationBailout": [
-                "Statement (VariableDeclaration) with side effects in source code at 5:0-107",
                 "ModuleConcatenation bailout: Cannot concat with ../../node_modules/html-loader/dist/runtime/getUrl.js: Module is not an ECMAScript module"
               ],
               "depth": 0
@@ -5444,10 +5055,10 @@
                 "javascript": 42,
                 "asset": 1950094
               },
-              "built": true,
-              "codeGenerated": true,
+              "built": false,
+              "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "asset/resource|/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/assets/media/video.mp4",
               "name": "../assets/media/video.mp4",
               "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/assets/media/video.mp4",
@@ -5508,10 +5119,10 @@
               "sizes": {
                 "javascript": 77
               },
-              "built": true,
-              "codeGenerated": true,
+              "built": false,
+              "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "javascript/esm|data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
               "name": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
               "nameForCondition": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
@@ -5553,9 +5164,7 @@
               ],
               "usedExports": [],
               "providedExports": [],
-              "optimizationBailout": [
-                "Statement (ExpressionStatement) with side effects in source code at 1:0-77"
-              ],
+              "optimizationBailout": [],
               "depth": 0
             },
             {
@@ -5567,9 +5176,9 @@
                 "runtime": 267
               },
               "built": false,
-              "codeGenerated": true,
+              "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "webpack/runtime/compat get default export",
               "name": "webpack/runtime/compat get default export",
               "nameForCondition": null,
@@ -5603,9 +5212,9 @@
                 "runtime": 308
               },
               "built": false,
-              "codeGenerated": true,
+              "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "webpack/runtime/define property getters",
               "name": "webpack/runtime/define property getters",
               "nameForCondition": null,
@@ -5639,9 +5248,9 @@
                 "runtime": 88
               },
               "built": false,
-              "codeGenerated": true,
+              "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "webpack/runtime/hasOwnProperty shorthand",
               "name": "webpack/runtime/hasOwnProperty shorthand",
               "nameForCondition": null,
@@ -5675,9 +5284,9 @@
                 "runtime": 274
               },
               "built": false,
-              "codeGenerated": true,
+              "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "webpack/runtime/make namespace object",
               "name": "webpack/runtime/make namespace object",
               "nameForCondition": null,
@@ -5711,9 +5320,9 @@
                 "runtime": 27
               },
               "built": false,
-              "codeGenerated": true,
+              "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "webpack/runtime/publicPath",
               "name": "webpack/runtime/publicPath",
               "nameForCondition": null,
@@ -5747,9 +5356,9 @@
                 "runtime": 485
               },
               "built": false,
-              "codeGenerated": true,
+              "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "webpack/runtime/relative url",
               "name": "webpack/runtime/relative url",
               "nameForCondition": null,
@@ -5783,9 +5392,9 @@
                 "runtime": 325
               },
               "built": false,
-              "codeGenerated": true,
+              "codeGenerated": false,
               "buildTimeExecuted": false,
-              "cached": false,
+              "cached": true,
               "identifier": "webpack/runtime/require chunk loading",
               "name": "webpack/runtime/require chunk loading",
               "nameForCondition": null,
@@ -5838,10 +5447,10 @@
           "sizes": {
             "javascript": 77
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "javascript/esm|data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
           "name": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
           "nameForCondition": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
@@ -5882,9 +5491,7 @@
           ],
           "usedExports": [],
           "providedExports": [],
-          "optimizationBailout": [
-            "Statement (ExpressionStatement) with side effects in source code at 1:0-77"
-          ],
+          "optimizationBailout": [],
           "depth": 0
         },
         {
@@ -5895,10 +5502,10 @@
           "sizes": {
             "javascript": 1582
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/html-webpack-plugin/lib/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/html-loader/dist/cjs.js??ruleSet[1].rules[0].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/index.temp.html",
           "name": "../../node_modules/html-webpack-plugin/lib/loader.js!../index.temp.html",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/index.temp.html",
@@ -5955,7 +5562,6 @@
             "default"
           ],
           "optimizationBailout": [
-            "Statement (VariableDeclaration) with side effects in source code at 5:0-107",
             "ModuleConcatenation bailout: Cannot concat with ../../node_modules/html-loader/dist/runtime/getUrl.js: Module is not an ECMAScript module"
           ],
           "depth": 0
@@ -5968,10 +5574,10 @@
           "sizes": {
             "javascript": 530
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/html-loader/dist/runtime/getUrl.js",
           "name": "../../node_modules/html-loader/dist/runtime/getUrl.js",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/html-loader/dist/runtime/getUrl.js",
@@ -6047,8 +5653,6 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: module.exports is used directly at 3:0-14",
-            "Statement (ExpressionStatement) with side effects in source code at 3:0-26:2",
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 1
@@ -6062,10 +5666,10 @@
             "javascript": 42,
             "asset": 1950094
           },
-          "built": true,
-          "codeGenerated": true,
+          "built": false,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "asset/resource|/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/assets/media/video.mp4",
           "name": "../assets/media/video.mp4",
           "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/assets/media/video.mp4",
@@ -6126,9 +5730,9 @@
             "runtime": 267
           },
           "built": false,
-          "codeGenerated": true,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "webpack/runtime/compat get default export",
           "name": "webpack/runtime/compat get default export",
           "nameForCondition": null,
@@ -6161,9 +5765,9 @@
             "runtime": 308
           },
           "built": false,
-          "codeGenerated": true,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "webpack/runtime/define property getters",
           "name": "webpack/runtime/define property getters",
           "nameForCondition": null,
@@ -6196,9 +5800,9 @@
             "runtime": 88
           },
           "built": false,
-          "codeGenerated": true,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "webpack/runtime/hasOwnProperty shorthand",
           "name": "webpack/runtime/hasOwnProperty shorthand",
           "nameForCondition": null,
@@ -6231,9 +5835,9 @@
             "runtime": 274
           },
           "built": false,
-          "codeGenerated": true,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "webpack/runtime/make namespace object",
           "name": "webpack/runtime/make namespace object",
           "nameForCondition": null,
@@ -6266,9 +5870,9 @@
             "runtime": 27
           },
           "built": false,
-          "codeGenerated": true,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "webpack/runtime/publicPath",
           "name": "webpack/runtime/publicPath",
           "nameForCondition": null,
@@ -6301,9 +5905,9 @@
             "runtime": 485
           },
           "built": false,
-          "codeGenerated": true,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "webpack/runtime/relative url",
           "name": "webpack/runtime/relative url",
           "nameForCondition": null,
@@ -6336,9 +5940,9 @@
             "runtime": 325
           },
           "built": false,
-          "codeGenerated": true,
+          "codeGenerated": false,
           "buildTimeExecuted": false,
-          "cached": false,
+          "cached": true,
           "identifier": "webpack/runtime/require chunk loading",
           "name": "webpack/runtime/require chunk loading",
           "nameForCondition": null,
