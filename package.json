@@ -13,6 +13,7 @@
   "license": "MIT",
   "sideEffects": [
     "*.css",
+    "*.scss",
     "src/**/*.ts"
   ],
   "dependencies": {
@@ -38,6 +39,9 @@
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
     "speed-measure-webpack-plugin": "^1.5.0",
     "stream-browserify": "^3.0.0",
     "style-loader": "^3.3.1",

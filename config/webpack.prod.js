@@ -2,13 +2,26 @@ const commonConfig = require('./webpack.common');
 const path = require('path');
 const webpack = require('webpack')
 const { merge } = require('webpack-merge');
-const { CleanWebpackPlugin }= require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = merge(commonConfig, {
     devtool: 'cheap-module-source-map',
     mode: process.env.NODE_ENV,
     cache: {
         type: 'filesystem',// memory filesystem,  // 默认是在内存中存储
         cacheDirectory:path.resolve(__dirname,'../node_modules/.cache/webpack') // 默认缓存目录
+    },
+    module: {
+        rules: [
+            {
+                test: /\.scss|css$/,
+                use: [
+                    { loader: MiniCssExtractPlugin.loader },
+                    "css-loader",
+                    "sass-loader"
+                ]
+            }
+        ]
     },
     // resolve: {
         // fallback: {
@@ -25,11 +38,9 @@ module.exports = merge(commonConfig, {
     plugins: [
         new webpack.BannerPlugin("Copyright By yanyunchangfeng"),
         new CleanWebpackPlugin(),
-        // new MiniCssExtractPlugin({
-        //     // Options similar to the same options in webpackOptions.output
-        //     // both options are optional
-        //     filename: "[name].css",
-        //     chunkFilename: "[name].css"
-        // })
+        new MiniCssExtractPlugin({
+            filename: "[name].[contenthash]css",
+            chunkFilename: "[name].[contenthash].css"
+        })
     ]
 })

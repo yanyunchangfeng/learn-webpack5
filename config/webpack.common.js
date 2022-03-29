@@ -18,8 +18,8 @@ module.exports = {
     },
     output: {
         path: path.join(process.cwd(), 'dist'),
-        filename: '[name].bundle.js',//入口代码块文件名的生成规则
-        chunkFilename: "[name].bundle.js"//非入口模块的生成规则
+        filename: '[name].[contenthash].js',//入口代码块文件名的生成规则
+        chunkFilename: "[name].[contenthash].js"//非入口模块的生成规则
     },
     optimization: {
         // usedExports:true,// 标记使用到的导出
@@ -28,7 +28,7 @@ module.exports = {
     },
     resolve: {
         modules: [path.resolve('node_modules')],// 解析第三方包
-        extensions: ['.js', '.ts', '.css', '.less', '.json'],// 文件后缀名 先后顺序查找
+        extensions: ['.js', '.ts', '.css', '.less','.scss', '.json'],// 文件后缀名 先后顺序查找
         mainFields: ['style', 'main'],// eg: bootstrap 先找package.json 的style字段 没有的话再找main字段
         // mainFiles:['index.js','index.ts'],// 入口文件的名字 默认是index.js 
         alias: { // 别名  注意tsconfig.json˙中的paths也要对应配置

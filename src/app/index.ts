@@ -5,7 +5,7 @@
 // import { fn1 } from 'src/app/lesson4'
 // import 'src/app/lesson6'
 // import 'src/app/lesson7'
-// import 'src/app/lesson7/style'
+import 'src/app/lesson7/style'
 // import 'src/app/lesson10'
 import 'src/app/lesson12'
 // import { foo } from 'src/app/lesson11'

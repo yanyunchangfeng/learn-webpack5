@@ -1,16 +1,16 @@
 {
-  "hash": "70477b31d7cb6c83a5de",
+  "hash": "bc5f2106bf02fb61290a",
   "version": "5.68.0",
-  "time": 1052,
-  "builtAt": 1648367293440,
+  "time": 2053,
+  "builtAt": 1648528675400,
   "publicPath": "auto",
   "outputPath": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/dist",
   "assetsByChunkName": {
     "main": [
-      "main.bundle.js"
+      "main.ae0dddce2c209d477dca.js"
     ],
     "modal": [
-      "modal.bundle.js"
+      "modal.4a7d507b4e531d0111a2.js"
     ]
   },
   "assets": [
@@ -120,18 +120,20 @@
     },
     {
       "type": "asset",
-      "name": "main.bundle.js",
-      "size": 4956,
+      "name": "main.ae0dddce2c209d477dca.js",
+      "size": 5001,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
+        "immutable": true,
+        "contenthash": "ae0dddce2c209d477dca",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "main.bundle.js.LICENSE.txt"
+          "license": "main.ae0dddce2c209d477dca.js.LICENSE.txt"
         },
-        "size": 4956
+        "size": 5001
       },
       "chunkNames": [
         "main"
@@ -143,7 +145,7 @@
       "related": [
         {
           "type": "license",
-          "name": "main.bundle.js.LICENSE.txt",
+          "name": "main.ae0dddce2c209d477dca.js.LICENSE.txt",
           "size": 36,
           "emitted": true,
           "comparedForEmit": false,
@@ -215,12 +217,12 @@
     {
       "type": "asset",
       "name": "modal.html",
-      "size": 1212,
+      "size": 1226,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 1212
+        "size": 1226
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -234,12 +236,12 @@
     {
       "type": "asset",
       "name": "index.html",
-      "size": 1211,
+      "size": 1225,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 1211
+        "size": 1225
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -252,18 +254,20 @@
     },
     {
       "type": "asset",
-      "name": "917.bundle.js",
-      "size": 199,
+      "name": "917.24522640b1571f71b680.js",
+      "size": 213,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
+        "immutable": true,
+        "contenthash": "24522640b1571f71b680",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "917.bundle.js.LICENSE.txt"
+          "license": "917.24522640b1571f71b680.js.LICENSE.txt"
         },
-        "size": 199
+        "size": 213
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -273,7 +277,7 @@
       "related": [
         {
           "type": "license",
-          "name": "917.bundle.js.LICENSE.txt",
+          "name": "917.24522640b1571f71b680.js.LICENSE.txt",
           "size": 36,
           "emitted": true,
           "comparedForEmit": false,
@@ -300,18 +304,20 @@
     },
     {
       "type": "asset",
-      "name": "modal.bundle.js",
-      "size": 125,
+      "name": "modal.4a7d507b4e531d0111a2.js",
+      "size": 139,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
+        "immutable": true,
+        "contenthash": "4a7d507b4e531d0111a2",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "modal.bundle.js.LICENSE.txt"
+          "license": "modal.4a7d507b4e531d0111a2.js.LICENSE.txt"
         },
-        "size": 125
+        "size": 139
       },
       "chunkNames": [
         "modal"
@@ -323,7 +329,7 @@
       "related": [
         {
           "type": "license",
-          "name": "modal.bundle.js.LICENSE.txt",
+          "name": "modal.4a7d507b4e531d0111a2.js.LICENSE.txt",
           "size": 36,
           "emitted": true,
           "comparedForEmit": false,
@@ -355,10 +361,10 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 28915,
+      "size": 29100,
       "sizes": {
-        "javascript": 21660,
-        "runtime": 7255
+        "javascript": 21658,
+        "runtime": 7442
       },
       "names": [
         "main"
@@ -368,10 +374,10 @@
         "main"
       ],
       "files": [
-        "main.bundle.js"
+        "main.ae0dddce2c209d477dca.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "d780e287c5f5341445bc",
+      "hash": "9050870e7293c9af9bee",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [],
@@ -384,9 +390,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 8172,
+          "size": 8170,
           "sizes": {
-            "javascript": 8172
+            "javascript": 8170
           },
           "built": true,
           "codeGenerated": true,
@@ -543,6 +549,42 @@
           "type": "module",
           "moduleType": "runtime",
           "layer": null,
+          "size": 0,
+          "sizes": {
+            "runtime": 0
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/css loading",
+          "name": "webpack/runtime/css loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
           "size": 308,
           "sizes": {
             "runtime": 308
@@ -615,9 +657,9 @@
           "type": "module",
           "moduleType": "runtime",
           "layer": null,
-          "size": 174,
+          "size": 198,
           "sizes": {
-            "runtime": 174
+            "runtime": 198
           },
           "built": false,
           "codeGenerated": true,
@@ -625,6 +667,42 @@
           "cached": false,
           "identifier": "webpack/runtime/get javascript chunk filename",
           "name": "webpack/runtime/get javascript chunk filename",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 163,
+          "sizes": {
+            "runtime": 163
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/get mini-css chunk filename",
+          "name": "webpack/runtime/get mini-css chunk filename",
           "nameForCondition": null,
           "index": null,
           "preOrderIndex": null,
@@ -891,7 +969,7 @@
         "modal"
       ],
       "files": [
-        "modal.bundle.js"
+        "modal.4a7d507b4e531d0111a2.js"
       ],
       "auxiliaryFiles": [],
       "hash": "5e759c57d98b9012b77d",
@@ -987,7 +1065,7 @@
         "main"
       ],
       "files": [
-        "917.bundle.js"
+        "917.24522640b1571f71b680.js"
       ],
       "auxiliaryFiles": [
         "bc198e42292e55cafd92.module.wasm"
@@ -1104,9 +1182,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 8172,
+      "size": 8170,
       "sizes": {
-        "javascript": 8172
+        "javascript": 8170
       },
       "built": true,
       "codeGenerated": true,
@@ -1281,6 +1359,67 @@
     },
     {
       "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 50,
+      "sizes": {
+        "javascript": 50
+      },
+      "built": true,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+      "name": "./lesson7/style.scss",
+      "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
+      "issuerName": "./index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
+          "name": "./index.ts",
+          "id": 162
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": 162,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
+          "module": "./index.ts",
+          "moduleName": "./index.ts",
+          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
+          "resolvedModule": "./index.ts",
+          "type": "harmony side effect evaluation",
+          "active": false,
+          "explanation": "",
+          "userRequest": "src/app/lesson7/style",
+          "loc": "8:0-31",
+          "moduleId": 162,
+          "resolvedModuleId": 162
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not in any chunk"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
       "moduleType": "webassembly/async",
       "layer": null,
       "size": 50,
@@ -1365,6 +1504,376 @@
     },
     {
       "type": "module",
+      "moduleType": "css/mini-extract",
+      "size": 27,
+      "sizes": {
+        "css/mini-extract": 27
+      },
+      "built": true,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "css|/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss|0",
+      "name": "css ../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+      "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+      "issuerName": "./lesson7/style.scss",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
+          "name": "./index.ts",
+          "id": 162
+        },
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "name": "./lesson7/style.scss",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "module": "./lesson7/style.scss",
+          "moduleName": "./lesson7/style.scss",
+          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "resolvedModule": "./lesson7/style.scss",
+          "type": "unknown",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": false,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for CssModule"
+      ],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 631,
+      "sizes": {
+        "javascript": 631
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+      "name": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+      "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+      "issuerName": "./lesson7/style.scss",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
+          "name": "./index.ts",
+          "id": 162
+        },
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "name": "./lesson7/style.scss",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "loader import",
+          "active": true,
+          "explanation": "",
+          "userRequest": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss.webpack[javascript/auto]!=!!!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "loc": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss.webpack[javascript/auto]!=!!!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [
+        "Statement (VariableDeclaration) with side effects in source code at 4:0-97",
+        "ModuleConcatenation bailout: Module uses module.id"
+      ],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 2318,
+      "sizes": {
+        "javascript": 2318
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/api.js",
+      "name": "../../node_modules/css-loader/dist/runtime/api.js",
+      "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/api.js",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+      "issuerName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
+          "name": "./index.ts",
+          "id": 162
+        },
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "name": "./lesson7/style.scss",
+          "id": null
+        },
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "name": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
+          "loc": "3:0-95",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
+          "loc": "4:30-57",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/api.js",
+          "module": "../../node_modules/css-loader/dist/runtime/api.js",
+          "moduleName": "../../node_modules/css-loader/dist/runtime/api.js",
+          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/api.js",
+          "resolvedModule": "../../node_modules/css-loader/dist/runtime/api.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "7:0-14",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": false,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 7:0-14",
+        "Statement (ExpressionStatement) with side effects in source code at 7:0-102:2",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 688,
+      "sizes": {
+        "javascript": 688
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/sourceMaps.js",
+      "name": "../../node_modules/css-loader/dist/runtime/sourceMaps.js",
+      "nameForCondition": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/sourceMaps.js",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+      "issuerName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/thread-loader/dist/cjs.js??ruleSet[1].rules[1].use[0]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/ts-loader/index.js??ruleSet[1].rules[1].use[1]!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/index.ts",
+          "name": "./index.ts",
+          "id": 162
+        },
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "name": "./lesson7/style.scss",
+          "id": null
+        },
+        {
+          "identifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "name": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../../node_modules/css-loader/dist/runtime/sourceMaps.js",
+          "loc": "2:0-112",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "module": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "moduleName": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/sass-loader/dist/cjs.js!/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/src/app/lesson7/style.scss",
+          "resolvedModule": "./lesson7/style.scss.webpack[javascript/auto]!=!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./lesson7/style.scss",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../../../node_modules/css-loader/dist/runtime/sourceMaps.js",
+          "loc": "4:58-95",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/sourceMaps.js",
+          "module": "../../node_modules/css-loader/dist/runtime/sourceMaps.js",
+          "moduleName": "../../node_modules/css-loader/dist/runtime/sourceMaps.js",
+          "resolvedModuleIdentifier": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/node_modules/css-loader/dist/runtime/sourceMaps.js",
+          "resolvedModule": "../../node_modules/css-loader/dist/runtime/sourceMaps.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "3:0-14",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": false,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 3:0-14",
+        "Statement (ExpressionStatement) with side effects in source code at 3:0-22:2",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 267,
+      "sizes": {
+        "runtime": 267
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/compat get default export",
+      "name": "webpack/runtime/compat get default export",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": [],
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for CompatGetDefaultExportRuntimeModule"
+      ],
+      "depth": null
+    },
+    {
+      "type": "module",
       "moduleType": "runtime",
       "layer": null,
       "size": 267,
@@ -1396,6 +1905,76 @@
       "usedExports": null,
       "providedExports": [],
       "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 0,
+      "sizes": {
+        "runtime": 0
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/css loading",
+      "name": "webpack/runtime/css loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": [],
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for DefinePropertyGettersRuntimeModule"
+      ],
       "depth": null
     },
     {
@@ -1472,9 +2051,9 @@
       "type": "module",
       "moduleType": "runtime",
       "layer": null,
-      "size": 174,
+      "size": 198,
       "sizes": {
-        "runtime": 174
+        "runtime": 198
       },
       "built": false,
       "codeGenerated": true,
@@ -1482,6 +2061,41 @@
       "cached": false,
       "identifier": "webpack/runtime/get javascript chunk filename",
       "name": "webpack/runtime/get javascript chunk filename",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 163,
+      "sizes": {
+        "runtime": 163
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/get mini-css chunk filename",
+      "name": "webpack/runtime/get mini-css chunk filename",
       "nameForCondition": null,
       "index": null,
       "preOrderIndex": null,
@@ -1536,6 +2150,41 @@
       "usedExports": null,
       "providedExports": [],
       "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": [],
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for HasOwnPropertyRuntimeModule"
+      ],
       "depth": null
     },
     {
@@ -1647,6 +2296,41 @@
       "type": "module",
       "moduleType": "runtime",
       "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": true,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": true,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [],
+      "usedExports": [],
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for MakeNamespaceObjectRuntimeModule"
+      ],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
       "size": 867,
       "sizes": {
         "runtime": 867
@@ -1722,12 +2406,12 @@
       ],
       "assets": [
         {
-          "name": "main.bundle.js",
-          "size": 4956
+          "name": "main.ae0dddce2c209d477dca.js",
+          "size": 5001
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 4956,
+      "assetsSize": 5001,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -1742,12 +2426,12 @@
       ],
       "assets": [
         {
-          "name": "modal.bundle.js",
-          "size": 125
+          "name": "modal.4a7d507b4e531d0111a2.js",
+          "size": 139
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 125,
+      "assetsSize": 139,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -1764,12 +2448,12 @@
       ],
       "assets": [
         {
-          "name": "main.bundle.js",
-          "size": 4956
+          "name": "main.ae0dddce2c209d477dca.js",
+          "size": 5001
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 4956,
+      "assetsSize": 5001,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -1784,12 +2468,12 @@
       ],
       "assets": [
         {
-          "name": "modal.bundle.js",
-          "size": 125
+          "name": "modal.4a7d507b4e531d0111a2.js",
+          "size": 139
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 125,
+      "assetsSize": 139,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -1812,8 +2496,8 @@
       "name": "HtmlWebpackCompiler",
       "hash": "ec066caf70e73622c35b",
       "version": "5.68.0",
-      "time": 315,
-      "builtAt": 1648367292727,
+      "time": 1202,
+      "builtAt": 1648528674572,
       "publicPath": "",
       "outputPath": "/Users/yanyunchangfeng/Documents/webproject/learning-webpack5/dist",
       "assetsByChunkName": {},
