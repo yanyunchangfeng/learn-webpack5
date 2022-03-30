@@ -1,5 +1,5 @@
 const OtherModule = await import('./other');
-import React from 'react';
+// import React from 'react';
 // TopAwait webpack5的新语法 
 
 // React.lazy  实现原理
@@ -18,20 +18,4 @@ import React from 'react';
 //         }
 //      }
 // }
-
-class TreeShaking{
-    constructor() {
-       
-    }
-    /* PURE */
-    random() {
-        console.log('math.random')
-        return Math.random()
-    }
-    changeBg() {
-        console.log('changeBg')
-        document.body.style.background = '#000'
-    }
-}
-
-export default TreeShaking
+export { }

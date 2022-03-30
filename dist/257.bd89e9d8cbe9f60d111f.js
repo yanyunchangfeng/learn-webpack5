@@ -1,0 +1,2 @@
+/*! For license information please see 257.bd89e9d8cbe9f60d111f.js.LICENSE.txt */
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[257],{2257:(s,e,l)=>{l.r(e),l.d(e,{default:()=>o}),console.log("this is dynamic import module lesson2");const o="lesson2"}}]);

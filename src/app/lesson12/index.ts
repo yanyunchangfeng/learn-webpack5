@@ -1,3 +1,6 @@
+import React from 'react';
+import('src/app/lesson3'/*webpackChunkName:'lesson3'*/ /*webpackPreload:true*/ )
+
 interface Idip {
     memory?: WebAssembly.Memory
     cppConvFilter?: CallableFunction

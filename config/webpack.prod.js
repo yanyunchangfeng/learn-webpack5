@@ -45,7 +45,7 @@ module.exports = merge(commonConfig, {
         new webpack.BannerPlugin("Copyright By yanyunchangfeng"),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: "[name].[contenthash]css",
+            filename: "[name].[contenthash].css",
             chunkFilename: "[name].[contenthash].css"
         })
     ]

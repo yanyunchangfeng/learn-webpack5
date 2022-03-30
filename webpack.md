@@ -44,7 +44,7 @@
    |-----|----|
    |source-map |原始代码 最好的 sourcemap 质量有完整的结果，但是会很慢 |
    |eval-source-map |原始代码 同样道理 但是最高的质量和最低的性能 |
-   |cheap-module-eval-source-map |原始代码（只有行内） 同样道理 但是最高的质量和更低的性能 |
+   |eval-cheap-module--source-map |原始代码（只有行内） 同样道理 但是最高的质量和更低的性能 |
    |eval|生成代码（行内）每个模块都被 eval 执行，并且 sourcemap 作为 eval 的一个 dataurl |
    |cheap-source-map |转换代码（行内）生成的 sourcemap 没有列映射，从 loaders 生成的 sourcemap 没有被使用|
    |cheap-module-source-map |原始代码（只有行内）与上面一样除了每行特点的从 loader 中进行映射|
@@ -65,5 +65,17 @@
 - 不管是生产环境还是开发环境，我们都需要定位 debug 到最原始的资源，比如定位错误到 jsx，ts 的原始代码，而不是经编译后的 js 代码，所以不会去掉 module 属性
 - 需要生成 map 文件，所以得有 source-map 属性
 - 总结
-  - 开发环境使用：cheap-module-eval-source-map
+  - 开发环境使用：eval-cheap-module--source-map
   - 生产环境使用：cheap-module-source-map
+
+5. module chunk bundle
+
+- module: 就是 js 的模块化 webpack 支持 commonJS、ES6 等模块化规范，简单来说就是你通过 import 语句引入的代码
+
+- chunk: chunk 是 webpack 根据功能拆分出来的，包含三种情况
+
+* 你的项目入口(entry)
+* 通过 import()动态引入的代码
+* 通过 splitChunks 拆分出来的代码
+
+- bundle: bundle 是 webpack 打包之后的各个文件，一般就是和 chunk 是一对一的关系，bundle 就是对 chunk 进行编译压缩打包等处理之后的产出

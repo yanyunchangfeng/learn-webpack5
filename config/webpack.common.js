@@ -25,6 +25,31 @@ module.exports = {
         // usedExports:true,// 标记使用到的导出
         // moduleIds: 'natural', named  deterministic size // 模块名称的生成规则 deterministic 生产模式默认值
         // chunkIds:'natural' // named  deterministic size //代码块名称的生成规则
+        // 自动分割第三方模块和公共模块
+        splitChunks: {
+            chunks: 'all', // 默认作用于异步chunk，值为 all 全部/initial同步/async异步
+            minSize: 0,//默认值是30kb，代码块的最小尺寸
+            minChunks: 1 ,//被多少模块共享，在分割之前模块的被引用次数
+            maxAsyncRequests:2,// 限制异步模块内部的并行最大请求数的，说白了你可以理解为是每个import()它里面的最大并行请求数量
+            maxInitialRequests: 4,// 限制入口的拆分数量
+            name: false,//打包后的名称，默认是chunk的名字通过分割符（默认是~）分隔开，如vendor~
+            automaticNameDelimiter: "~",//默认webpack将会使用入口名和代码块的名称生成命名，比如'vendors~main.js'
+            cacheGroups: {
+                //设置缓存组用来抽取满足不同规则的chunk，下面以生成common为例
+                vendors: {
+                    chunks: 'all',
+                    test:/node_modules/,//条件
+                    priority:-10,//优先级，一个chunk很可能满足多个缓存组，会被抽取到优先级高的缓存组中，为了能够让自定义缓存组有更高的优先级
+                },
+                commons: {
+                    chunks: 'all',
+                    minSize: 0,// 最小提取字节数
+                    minChunks: 2,//最少被几个chunk引用
+                    priority: -20,
+                    reuseExistingChunk:true,//如果该chunk中引用了已经被抽取的chunk，直接引用该chunk，不会重复打包代码
+                }
+            }
+        }
     },
     resolve: {
         modules: [path.resolve('node_modules')],// 解析第三方包
