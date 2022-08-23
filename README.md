@@ -48,6 +48,7 @@
 [IgnorePlugin](./config/webpack.common.js)  
 [friendly-errors-webpack-plugin 日志优化](./config/webpack.common.js)  
 [thread-loader 多进程处理](./config/webpack.common.js)
+[UnusedWebpackPlugin](./config/webpack.prod.js)
 
 # hash
 

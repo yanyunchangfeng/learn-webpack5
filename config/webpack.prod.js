@@ -4,18 +4,17 @@ const webpack = require('webpack')
 const { merge } = require('webpack-merge');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const UnusedWebpackPlugin = require('unused-webpack-plugin')
 module.exports = merge(commonConfig, {
-    devtool: 'cheap-module-source-map',
-    mode: process.env.NODE_ENV,
+    // devtool: 'cheap-module-source-map',
     optimization: {
-        // minimize: true,
-        // minimizer: [new TerserPlugin(),new OptimizeCssAssetsPlugin()],
+        minimize: true,
+        minimizer: [new TerserPlugin()],
     },
     cache: {
         type: 'filesystem',// memory filesystem,  // 默认是在内存中存储
-        cacheDirectory:path.resolve(__dirname,'../node_modules/.cache/webpack') // 默认缓存目录
+        cacheDirectory: path.resolve(__dirname, '../node_modules/.cache/webpack') // 默认缓存目录
     },
     module: {
         rules: [
@@ -30,16 +29,16 @@ module.exports = merge(commonConfig, {
         ]
     },
     // resolve: {
-        // fallback: {
-        //     crypto: require.resolve('crypto-browserify'), // webpack5 默认移除了nodejs的polyfill 需要的要的话需要配置
-        //     stream: require.resolve('stream-browserify'),
-        //     buffer:require.resolve('buffer')
-        // }
-        // fallback: {
-        //     crypto: false,
-        //     stream: false,
-        //     buffer:false
-        // }
+    // fallback: {
+    //     crypto: require.resolve('crypto-browserify'), // webpack5 默认移除了nodejs的polyfill 需要的要的话需要配置
+    //     stream: require.resolve('stream-browserify'),
+    //     buffer:require.resolve('buffer')
+    // }
+    // fallback: {
+    //     crypto: false,
+    //     stream: false,
+    //     buffer:false
+    // }
     // }
     plugins: [
         new webpack.BannerPlugin("Copyright By yanyunchangfeng"),
@@ -47,6 +46,10 @@ module.exports = merge(commonConfig, {
         new MiniCssExtractPlugin({
             filename: "[name].[contenthash].css",
             chunkFilename: "[name].[contenthash].css"
+        }),
+        new UnusedWebpackPlugin({
+            directories: [path.join(process.cwd(), 'src','app')],  //用于指定需要分析的文件目录
+            root:__dirname// 用于显示相对路径替代原有的绝对路径。
         })
     ]
 })

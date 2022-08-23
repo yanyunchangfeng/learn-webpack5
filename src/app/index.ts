@@ -14,6 +14,8 @@ console.log('fn1', fn1)
 console.log('process.env.NODE_ENV', process.env.NODE_ENV)
 console.log('AUTHOR', AUTHOR)
 console.log('yanyunchagnfeng png', png)
+import _ from 'lodash';
+console.log(_.chunk(['a', 'b', 'c', 'd'], 2))
 
 
 // let start: any = null;
