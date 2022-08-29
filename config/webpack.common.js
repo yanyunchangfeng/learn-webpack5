@@ -7,6 +7,7 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin')
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const smw = new SpeedMeasureWebpackPlugin()
+const UnusedWebpackPlugin = require('unused-webpack-plugin')
 const os = require('os')
 // console.log(os.cpus(),'os cups')
 // module.exports = smw.wrap({
@@ -69,6 +70,7 @@ module.exports = {
     experiments: {
         topLevelAwait: true, // 此处为新增配置
         asyncWebAssembly: true,
+        // lazyCompilation:true,// 需编译
     },
     module: {
         rules: [
@@ -179,6 +181,9 @@ module.exports = {
         // IgnorePlugin用于忽略某些特定的模块，让webpack不把这些指定的模块打包进去
         // 第一个是匹配引入模块路径的正则表达式
         // 第二个是匹配模块的对应上下文，即所在目录名
-      
+        process.env.NODE_ENV === 'development'?new UnusedWebpackPlugin({
+            directories: [path.join(process.cwd(), 'src','app')],  //用于指定需要分析的文件目录
+            root:__dirname// 用于显示相对路径替代原有的绝对路径。
+        }):null
     ]
 }

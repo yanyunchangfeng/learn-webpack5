@@ -5,7 +5,6 @@ const { merge } = require('webpack-merge');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-const UnusedWebpackPlugin = require('unused-webpack-plugin')
 module.exports = merge(commonConfig, {
     // devtool: 'cheap-module-source-map',
     optimization: {
@@ -47,9 +46,5 @@ module.exports = merge(commonConfig, {
             filename: "[name].[contenthash].css",
             chunkFilename: "[name].[contenthash].css"
         }),
-        new UnusedWebpackPlugin({
-            directories: [path.join(process.cwd(), 'src','app')],  //用于指定需要分析的文件目录
-            root:__dirname// 用于显示相对路径替代原有的绝对路径。
-        })
     ]
 })
