@@ -47,13 +47,17 @@
 [module.noParse](./config/webpack.common.js)  
 [IgnorePlugin](./config/webpack.common.js)  
 [friendly-errors-webpack-plugin 日志优化](./config/webpack.common.js)  
-[thread-loader 多进程处理](./config/webpack.common.js)
+[thread-loader 多进程处理](./config/webpack.common.js)  
 [UnusedWebpackPlugin](./config/webpack.prod.js)
 
 # hash
 
 [hash,chunkhash,contenthash](./webpack.md)  
 [source map](./webpack.md)
+
+# webpack 结构化图
+
+[webpack 结构化配置图](./src/assets/img/webpack-structure.jpg)
 
 ## 我的个人博客
 
