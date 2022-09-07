@@ -11,17 +11,18 @@ const UnusedWebpackPlugin = require("unused-webpack-plugin");
 const os = require("os");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const isDev = process.env.NODE_ENV === "development";
+isAnalyzerMode = process.env.ANALYZE === "1";
 const noop = () => {};
-// console.log(os.cpus(),'os cups')
 // module.exports = smw.wrap({
 module.exports = {
-  context: path.join(process.cwd(), "src", "app"), // 项目执行上下文路径；
+  context: process.cwd(), // 项目执行上下文路径；
   mode: process.env.NODE_ENV, //编译模式短语，支持 development、production 等值，可以理解为一种声明环境的短语
   entry: {
     // 用于定义项目入口文件，Webpack会从这些入口文件开始按图索骥找出所有项目文件；
-    main: "./index.ts", // 可以配置多个
-    modal: "./modal.ts", // 多页应用入口
+    main: "./src/app/index.ts", // 可以配置多个
+    modal: "./src/app/modal.ts", // 多页应用入口
   },
   devtool: isDev ? "source-map" : false, //用于配置产物 Sourcemap 生成规则
   output: {
@@ -32,34 +33,44 @@ module.exports = {
   },
   optimization: {
     // 用于控制如何优化产物包体积，内置DeadCodeElimination、ScopeHoisting、代码混淆、代码压缩等功能
-    usedExports: true, // 标记使用到的导出
     // moduleIds: 'natural', named  deterministic size // 模块名称的生成规则 deterministic 生产模式默认值
     // chunkIds:'natural' // named  deterministic size //代码块名称的生成规则
     // 自动分割第三方模块和公共模块
-    splitChunks: {
-      chunks: "all", // 默认作用于异步chunk，值为 all 全部/initial同步/async异步
-      minSize: 0, //默认值是30kb，代码块的最小尺寸
-      minChunks: 1, //被多少模块共享，在分割之前模块的被引用次数
-      maxAsyncRequests: 2, // 限制异步模块内部的并行最大请求数的，说白了你可以理解为是每个import()它里面的最大并行请求数量
-      maxInitialRequests: 4, // 限制入口的拆分数量
-      name: false, //打包后的名称，默认是chunk的名字通过分割符（默认是~）分隔开，如vendor~
-      automaticNameDelimiter: "~", //默认webpack将会使用入口名和代码块的名称生成命名，比如'vendors~main.js'
-      cacheGroups: {
-        //设置缓存组用来抽取满足不同规则的chunk，下面以生成common为例
-        vendors: {
-          chunks: "all",
-          test: /node_modules/, //条件
-          priority: -10, //优先级，一个chunk很可能满足多个缓存组，会被抽取到优先级高的缓存组中，为了能够让自定义缓存组有更高的优先级
+    // 以下配置项为开发模式下禁止产物优化
+    splitChunks: isDev
+      ? false //关闭代码分包；
+      : {
+          chunks: "all", // 默认作用于异步chunk，值为 all 全部/initial同步/async异步
+          minSize: 0, //默认值是30kb，代码块的最小尺寸
+          minChunks: 1, //被多少模块共享，在分割之前模块的被引用次数
+          maxAsyncRequests: 2, // 限制异步模块内部的并行最大请求数的，说白了你可以理解为是每个import()它里面的最大并行请求数量
+          maxInitialRequests: 4, // 限制入口的拆分数量
+          name: false, //打包后的名称，默认是chunk的名字通过分割符（默认是~）分隔开，如vendor~
+          automaticNameDelimiter: "~", //默认webpack将会使用入口名和代码块的名称生成命名，比如'vendors~main.js'
+          cacheGroups: {
+            //设置缓存组用来抽取满足不同规则的chunk，下面以生成common为例
+            vendors: {
+              chunks: "all",
+              test: /node_modules/, //条件
+              priority: -10, //优先级，一个chunk很可能满足多个缓存组，会被抽取到优先级高的缓存组中，为了能够让自定义缓存组有更高的优先级
+            },
+            commons: {
+              chunks: "all",
+              minSize: 0, // 最小提取字节数
+              minChunks: 2, //最少被几个chunk引用
+              priority: -20,
+              reuseExistingChunk: true, //如果该chunk中引用了已经被抽取的chunk，直接引用该chunk，不会重复打包代码
+            },
+          },
         },
-        commons: {
-          chunks: "all",
-          minSize: 0, // 最小提取字节数
-          minChunks: 2, //最少被几个chunk引用
-          priority: -20,
-          reuseExistingChunk: true, //如果该chunk中引用了已经被抽取的chunk，直接引用该chunk，不会重复打包代码
-        },
-      },
-    },
+    removeAvailableModules: isDev ? false : true,
+    removeEmptyChunks: isDev ? false : true,
+    minimize: isDev ? false : true, //关闭代码压缩;
+    concatenateModules: isDev ? false : true, //关闭模块合并;
+    usedExports: isDev ? false : true, //关闭 Tree-shaking 功能； // 标记使用到的导出
+  },
+  watchOptions: {
+    ignored: /node_modules/, //最小化 watch 监控范围
   },
   target: "web", //用于配置编译产物的目标运行环境，支持 web、node、electron 等值，不同值最终产物会有所差异
   resolve: {
@@ -82,7 +93,7 @@ module.exports = {
   experiments: {
     topLevelAwait: true, // 此处为新增配置
     asyncWebAssembly: true,
-    // lazyCompilation:true,// 需编译
+    // lazyCompilation: isDev ? true : false, // 按需编译
   },
   module: {
     // 用于配置模块加载规则，例如针对什么类型的资源需要使用哪些Loader进行处理
@@ -109,13 +120,29 @@ module.exports = {
             loader: "ts-loader",
             options: {
               happyPackMode: true,
+              // 跳过 TS 类型检查
+              // 设置为“仅编译”，关闭类型检查
+              transpileOnly: true,
             },
           },
         ],
       },
       {
-        test: /\.png$/,
-        type: "asset/resource", //资源模块 对标file-loader
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        type: "asset/resource",
+        use: [
+          {
+            loader: "image-webpack-loader",
+            options: {
+              // jpeg 压缩配置
+              mozjpeg: {
+                quality: 80,
+              },
+              disable: isDev ? true : false,
+            },
+          },
+        ],
+        // 资源模块 对标file-loader
       },
       {
         test: /\.ico$/,
@@ -157,10 +184,14 @@ module.exports = {
   },
   stats: "errors-only", // 只在错误时输出  用于精确地控制编译过程的日志内容，在做比较细致的性能调式时非常有用
   plugins: [
-    new BundleAnalyzerPlugin({
-      analyzerMode: "disabled", // 不启动展示打包报告的http服务器
-      generateStatsFile: true, // 是否生成stats.json文件
-    }),
+    // fork 出子进程，专门用于执行类型检查 这样，既可以获得 Typescript 静态类型检查能力，又能提升整体编译速度。
+    new ForkTsCheckerWebpackPlugin(),
+    isAnalyzerMode
+      ? new BundleAnalyzerPlugin({
+          analyzerMode: "disabled", // 不启动展示打包报告的http服务器
+          generateStatsFile: true, // 是否生成stats.json文件
+        })
+      : noop,
     new htmlWebpackPlugin({
       template: path.join(process.cwd(), "src/index.temp.html"),
       filename: "index.html",
