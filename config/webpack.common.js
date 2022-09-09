@@ -10,12 +10,13 @@ const smw = new SpeedMeasureWebpackPlugin();
 const UnusedWebpackPlugin = require("unused-webpack-plugin");
 const os = require("os");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 const isDev = process.env.NODE_ENV === "development";
 isAnalyzerMode = process.env.ANALYZE === "1";
 const noop = () => {};
-// module.exports = smw.wrap({
+// module.exports = smw.wrap({ //需要包裹一层配置对象
 module.exports = {
   context: process.cwd(), // 项目执行上下文路径；
   mode: process.env.NODE_ENV, //编译模式短语，支持 development、production 等值，可以理解为一种声明环境的短语
@@ -27,9 +28,10 @@ module.exports = {
   devtool: isDev ? "source-map" : false, //用于配置产物 Sourcemap 生成规则
   output: {
     // 配置产物输出路径、名称等；
-    path: path.join(process.cwd(), "dist"),
+    path: path.join(process.cwd(), "docs"),
     filename: "[name].[contenthash].js", //入口代码块文件名的生成规则
     chunkFilename: "[name].[contenthash].js", //非入口模块的生成规则
+    clean: true,
   },
   optimization: {
     // 用于控制如何优化产物包体积，内置DeadCodeElimination、ScopeHoisting、代码混淆、代码压缩等功能
@@ -41,12 +43,12 @@ module.exports = {
       ? false //关闭代码分包；
       : {
           chunks: "all", // 默认作用于异步chunk，值为 all 全部/initial同步/async异步
-          minSize: 0, //默认值是30kb，代码块的最小尺寸
-          minChunks: 1, //被多少模块共享，在分割之前模块的被引用次数
+          minSize: 300 * 1024, // 默认值是30kb，代码块的最小尺寸
+          maxSize: 500 * 1024, // //超过这个尺寸的 Chunk 会尝试进一步拆分出更小的 Chunk  设置 maxSize 的值会同时设置 maxAsyncSize 和 maxInitialSize 的值
+          minChunks: 2, //被多少模块共享，在分割之前模块的被引用次数
           maxAsyncRequests: 2, // 限制异步模块内部的并行最大请求数的，说白了你可以理解为是每个import()它里面的最大并行请求数量
           maxInitialRequests: 4, // 限制入口的拆分数量
-          name: false, //打包后的名称，默认是chunk的名字通过分割符（默认是~）分隔开，如vendor~
-          automaticNameDelimiter: "~", //默认webpack将会使用入口名和代码块的名称生成命名，比如'vendors~main.js'
+          // enforceSizeThreshold: 300 * 1000, //超过这个尺寸的 Chunk 会被强制分包，忽略上述其它 size 限制；
           cacheGroups: {
             //设置缓存组用来抽取满足不同规则的chunk，下面以生成common为例
             vendors: {
@@ -56,7 +58,6 @@ module.exports = {
             },
             commons: {
               chunks: "all",
-              minSize: 0, // 最小提取字节数
               minChunks: 2, //最少被几个chunk引用
               priority: -20,
               reuseExistingChunk: true, //如果该chunk中引用了已经被抽取的chunk，直接引用该chunk，不会重复打包代码
@@ -68,6 +69,22 @@ module.exports = {
     minimize: isDev ? false : true, //关闭代码压缩;
     concatenateModules: isDev ? false : true, //关闭模块合并;
     usedExports: isDev ? false : true, //关闭 Tree-shaking 功能； // 标记使用到的导出
+    minimizer: [
+      // Webpack5 之后，约定使用 `'...'` 字面量保留默认 `minimizer` 配置
+      "...",
+      !isDev ? new CssMinimizerPlugin() : noop,
+      !isDev
+        ? new HtmlMinimizerPlugin({
+            minimizerOptions: {
+              // 折叠 Boolean 型属性
+              collapseBooleanAttributes: true,
+              // 使用精简 `doctype` 定义
+              useShortDoctype: true,
+              // ...
+            },
+          })
+        : noop,
+    ],
   },
   watchOptions: {
     ignored: /node_modules/, //最小化 watch 监控范围
@@ -99,11 +116,10 @@ module.exports = {
     // 用于配置模块加载规则，例如针对什么类型的资源需要使用哪些Loader进行处理
     rules: [
       {
-        test: /\.html$/,
+        test: /\.html$/i,
         use: [
           {
             loader: "html-loader",
-            options: { minimize: true },
           },
         ],
       },
@@ -137,6 +153,19 @@ module.exports = {
               // jpeg 压缩配置
               mozjpeg: {
                 quality: 80,
+              },
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: [0.65, 0.9],
+                speed: 4,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              webp: {
+                quality: 75,
               },
               disable: isDev ? true : false,
             },
@@ -182,6 +211,20 @@ module.exports = {
       return /lodash/.test(content);
     },
   },
+  performance: !isDev //监控产物体积
+    ? {
+        // 设置所有产物体积阈值
+        maxAssetSize: 172 * 1024,
+        // 设置 entry 产物体积阈值
+        maxEntrypointSize: 244 * 1024,
+        // 报错方式，支持 `error` | `warning` | false
+        hints: "warning",
+        // 过滤需要监控的文件类型
+        assetFilter: function (assetFilename) {
+          return assetFilename.endsWith(".js");
+        },
+      }
+    : false,
   stats: "errors-only", // 只在错误时输出  用于精确地控制编译过程的日志内容，在做比较细致的性能调式时非常有用
   plugins: [
     // fork 出子进程，专门用于执行类型检查 这样，既可以获得 Typescript 静态类型检查能力，又能提升整体编译速度。
@@ -216,7 +259,7 @@ module.exports = {
           patterns: [
             {
               from: path.resolve(process.cwd(), "src", "assets"),
-              to: path.resolve(process.cwd(), "dist"),
+              to: path.resolve(process.cwd(), "docs"),
             },
           ],
           options: {
@@ -243,7 +286,6 @@ module.exports = {
           chunkFilename: "[name].[contenthash].css",
         })
       : noop,
-    !isDev ? new CleanWebpackPlugin() : noop,
     !isDev ? new webpack.BannerPlugin("Copyright By yanyunchangfeng") : noop,
   ],
   infrastructureLogging: {
