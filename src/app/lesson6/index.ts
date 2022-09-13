@@ -1,4 +1,4 @@
-document.head.title = 'yanyunchangfeng';
+document.head.title = "yanyunchangfeng";
 export function getTitle() {
-    console.log(document.head.title,'title')
+  console.log(document.head.title, "title");
 }

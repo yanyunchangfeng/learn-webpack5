@@ -15,7 +15,7 @@ module.exports = merge(commonConfig, {
   },
   devServer: {
     // 用于配置与 HMR 强相关的开发服务器功能
-    port: 3001,
+    port: "auto",
     compress: true, //启动压缩 gzip
     open: true, // 启动之后自动打开浏览器
     historyApiFallback: true,

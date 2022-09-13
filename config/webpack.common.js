@@ -69,6 +69,7 @@ module.exports = {
     minimize: isDev ? false : true, //关闭代码压缩;
     concatenateModules: isDev ? false : true, //关闭模块合并;
     usedExports: isDev ? false : true, //关闭 Tree-shaking 功能； // 标记使用到的导出
+    //  Tree-shaking   最大粒度优化需要在package.json中配置 "sideEffects":false, 如果是css文件 需要配置sideEffects:["*.css"] // js 就是纯函数 没有副作用 css的话是有副作用
     minimizer: [
       // Webpack5 之后，约定使用 `'...'` 字面量保留默认 `minimizer` 配置
       "...",
@@ -286,7 +287,7 @@ module.exports = {
           chunkFilename: "[name].[contenthash].css",
         })
       : noop,
-    !isDev ? new webpack.BannerPlugin("Copyright By yanyunchangfeng") : noop,
+    // !isDev ? new webpack.BannerPlugin("Copyright By yanyunchangfeng") : noop,
   ],
   infrastructureLogging: {
     // 用于控制日志输出方式，例如可以通过该配置将日志输出到磁盘文件

@@ -10,13 +10,9 @@
     "generateAnalyzerFile": "cross-env NODE_ENV=production webpack --profile --json > stats.json",
     "analyzer": "webpack-bundle-analyzer --port 8888 ./dist/stats.json"
   },
+  "sideEffects":["*.css","*.less","*.scss","*.ts"],
   "author": "yanyunchangfeng <yanyunchangfeng@gmail.com> (https://github.com/yanyunchangfeng)",
   "license": "MIT",
-  "sideEffects": [
-    "*.css",
-    "*.scss",
-    "src/**/*.ts"
-  ],
   "dependencies": {
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
