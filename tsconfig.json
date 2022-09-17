@@ -8,12 +8,8 @@
         "strict": true,
         "target": "es2020",
         "lib": [
-            "es2015",
-            "es2016",
-            "es2015.iterable",
-            "dom",
-            "dom.iterable",
-            "ES2020.String"
+            "esnext",
+            "dom"
         ],
         "sourceMap": true,
         "jsx": "react",

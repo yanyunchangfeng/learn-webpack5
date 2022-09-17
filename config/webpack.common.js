@@ -8,11 +8,11 @@ const SpeedMeasureWebpackPlugin = require("speed-measure-webpack-plugin");
 const FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
 const smw = new SpeedMeasureWebpackPlugin();
 const UnusedWebpackPlugin = require("unused-webpack-plugin");
-const os = require("os");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
+const webpackBar = require("webpackbar");
 const isDev = process.env.NODE_ENV === "development";
 isAnalyzerMode = process.env.ANALYZE === "1";
 const noop = () => {};
@@ -52,12 +52,11 @@ module.exports = {
           cacheGroups: {
             //设置缓存组用来抽取满足不同规则的chunk，下面以生成common为例
             vendors: {
-              chunks: "all",
               test: /node_modules/, //条件
+              reuseExistingChunk: true,
               priority: -10, //优先级，一个chunk很可能满足多个缓存组，会被抽取到优先级高的缓存组中，为了能够让自定义缓存组有更高的优先级
             },
             commons: {
-              chunks: "all",
               minChunks: 2, //最少被几个chunk引用
               priority: -20,
               reuseExistingChunk: true, //如果该chunk中引用了已经被抽取的chunk，直接引用该chunk，不会重复打包代码
@@ -95,8 +94,8 @@ module.exports = {
     // 用于配置模块路径解析规则，可用于帮助Webpack更精确、高效地找到指定模块
     modules: [path.resolve("node_modules")], // 解析第三方包
     extensions: [".js", ".ts", ".tsx", ".css", ".less", ".scss", ".json"], // 文件后缀名 先后顺序查找
-    // mainFields: ['style', 'main'],// eg: bootstrap 先找package.json 的style字段 没有的话再找main字段
-    // mainFiles:['index.js','index.ts'],// 入口文件的名字 默认是index.js
+    mainFields: ["browser", "module", "main", "style"], // eg: bootstrap 先找package.json 的style字段 没有的话再找main字段
+    mainFiles: ["index"], // 入口文件的名字 默认是index
     alias: {
       // 别名  注意tsconfig.json˙中的paths也要对应配置
       src: path.resolve(__dirname, "../src"),
@@ -117,22 +116,8 @@ module.exports = {
     // 用于配置模块加载规则，例如针对什么类型的资源需要使用哪些Loader进行处理
     rules: [
       {
-        test: /\.html$/i,
-        use: [
-          {
-            loader: "html-loader",
-          },
-        ],
-      },
-      {
         test: /\.tsx?$/,
         use: [
-          {
-            loader: "thread-loader",
-            options: {
-              workers: os.cpus().length - 1,
-            },
-          },
           {
             loader: "ts-loader",
             options: {
@@ -208,7 +193,6 @@ module.exports = {
     // module.noParse字段，可以用于配置哪些模块文件的内容不需要进行解析
     // 不需要解析依赖(如无依赖)的第三方大型库等，可以通过这个字段来配置，以提高整体的构建速度
     noParse(content) {
-      // console.log(content,'content')
       return /lodash/.test(content);
     },
   },
@@ -228,8 +212,16 @@ module.exports = {
     : false,
   stats: "errors-only", // 只在错误时输出  用于精确地控制编译过程的日志内容，在做比较细致的性能调式时非常有用
   plugins: [
+    new webpackBar(),
     // fork 出子进程，专门用于执行类型检查 这样，既可以获得 Typescript 静态类型检查能力，又能提升整体编译速度。
-    new ForkTsCheckerWebpackPlugin(),
+    new ForkTsCheckerWebpackPlugin({
+      typescript: {
+        diagnosticOptions: {
+          semantic: true,
+          syntactic: true,
+        },
+      },
+    }),
     isAnalyzerMode
       ? new BundleAnalyzerPlugin({
           analyzerMode: "disabled", // 不启动展示打包报告的http服务器
@@ -277,7 +269,7 @@ module.exports = {
     // 第二个是匹配模块的对应上下文，即所在目录名
     !isDev
       ? new UnusedWebpackPlugin({
-          directories: [path.join(process.cwd(), "src", "app")], //用于指定需要分析的文件目录
+          directories: [path.join(process.cwd(), "src")], //用于指定需要分析的文件目录
           root: __dirname, // 用于显示相对路径替代原有的绝对路径。
         })
       : noop,
