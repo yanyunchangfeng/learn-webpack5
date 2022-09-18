@@ -13,8 +13,10 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 const webpackBar = require("webpackbar");
-const isDev = process.env.NODE_ENV === "development";
-isAnalyzerMode = process.env.ANALYZE === "1";
+const { NODE_ENV, ANALYZE, UNUSED } = process.env;
+const isDev = NODE_ENV === "development";
+isAnalyzerMode = ANALYZE === "1";
+isUnusedMode = UNUSED === "1";
 const noop = () => {};
 // module.exports = smw.wrap({ //需要包裹一层配置对象
 module.exports = {
@@ -115,6 +117,14 @@ module.exports = {
   module: {
     // 用于配置模块加载规则，例如针对什么类型的资源需要使用哪些Loader进行处理
     rules: [
+      {
+        test: /\.html$/i,
+        use: [
+          {
+            loader: "html-loader",
+          },
+        ],
+      },
       {
         test: /\.tsx?$/,
         use: [
@@ -267,7 +277,7 @@ module.exports = {
     // IgnorePlugin用于忽略某些特定的模块，让webpack不把这些指定的模块打包进去
     // 第一个是匹配引入模块路径的正则表达式
     // 第二个是匹配模块的对应上下文，即所在目录名
-    !isDev
+    isUnusedMode
       ? new UnusedWebpackPlugin({
           directories: [path.join(process.cwd(), "src")], //用于指定需要分析的文件目录
           root: __dirname, // 用于显示相对路径替代原有的绝对路径。
@@ -281,11 +291,11 @@ module.exports = {
       : noop,
     // !isDev ? new webpack.BannerPlugin("Copyright By yanyunchangfeng") : noop,
   ],
-  infrastructureLogging: {
-    // 用于控制日志输出方式，例如可以通过该配置将日志输出到磁盘文件
-    appendOnly: true,
-    level: "verbose",
-  },
+  // infrastructureLogging: {
+  //   // 用于控制日志输出方式，例如可以通过该配置将日志输出到磁盘文件
+  //   appendOnly: true,
+  //   level: "verbose",
+  // },
   externals: {
     //用于声明外部资源，Webpack 会直接忽略这部分资源，跳过这些资源的解析、打包操作
   },

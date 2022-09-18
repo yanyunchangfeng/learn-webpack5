@@ -2,9 +2,9 @@ import React from "react";
 // import(
 //   "src/app/lesson3" /*webpackChunkName:'lesson3'*/ /*webpackPreload:true*/ //预加载
 // );
-import(
-  "src/app/lesson3" /*webpackChunkName:'lesson3'*/ /*webpackPrefetch:true*/ //预获取
-);
+// import(
+//   "src/app/lesson3" /*webpackChunkName:'lesson3'*/ /*webpackPrefetch:true*/ //预获取
+// );
 
 interface Idip {
   memory?: WebAssembly.Memory;

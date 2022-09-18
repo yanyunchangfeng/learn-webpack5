@@ -1,1 +1,0 @@
-(()=>{"use strict";console.log("fn1",(function(){console.log("fn1")}))})();
