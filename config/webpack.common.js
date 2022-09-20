@@ -24,8 +24,8 @@ module.exports = {
   mode: process.env.NODE_ENV, //编译模式短语，支持 development、production 等值，可以理解为一种声明环境的短语
   entry: {
     // 用于定义项目入口文件，Webpack会从这些入口文件开始按图索骥找出所有项目文件；
-    main: "./src/app/index.ts", // 可以配置多个
-    modal: "./src/app/modal.ts", // 多页应用入口
+    main: "./src/index.ts", // 可以配置多个
+    modal: "./src/modal.ts", // 多页应用入口
   },
   devtool: isDev ? "source-map" : false, //用于配置产物 Sourcemap 生成规则
   output: {
@@ -100,7 +100,7 @@ module.exports = {
     mainFiles: ["index"], // 入口文件的名字 默认是index
     alias: {
       // 别名  注意tsconfig.json˙中的paths也要对应配置
-      src: path.resolve(__dirname, "../src"),
+      src: path.resolve("src"),
     },
   },
   resolveLoader: {
@@ -234,18 +234,18 @@ module.exports = {
     }),
     isAnalyzerMode
       ? new BundleAnalyzerPlugin({
-          analyzerMode: "disabled", // 不启动展示打包报告的http服务器
+          analyzerMode: "server", // 不启动展示打包报告的http服务器
           generateStatsFile: true, // 是否生成stats.json文件
         })
       : noop,
     new htmlWebpackPlugin({
-      template: path.join(process.cwd(), "src/index.temp.html"),
+      template: path.join(process.cwd(), "src/index.html"),
       filename: "index.html",
       chunks: ["main"], // 指定包含的代码块
       favicon: path.join(process.cwd(), "src/assets/img/yanyunchangfeng.png"),
     }),
     new htmlWebpackPlugin({
-      template: path.join(process.cwd(), "src/index.temp.html"),
+      template: path.join(process.cwd(), "src/index.html"),
       filename: "modal.html",
       chunks: ["modal"],
       favicon: path.join(process.cwd(), "src/assets/img/yanyunchangfeng.png"),
@@ -289,13 +289,13 @@ module.exports = {
           chunkFilename: "[name].[contenthash].css",
         })
       : noop,
-    // !isDev ? new webpack.BannerPlugin("Copyright By yanyunchangfeng") : noop,
+    !isDev ? new webpack.BannerPlugin("Copyright By yanyunchangfeng") : noop,
   ],
-  // infrastructureLogging: {
-  //   // 用于控制日志输出方式，例如可以通过该配置将日志输出到磁盘文件
-  //   appendOnly: true,
-  //   level: "verbose",
-  // },
+  infrastructureLogging: {
+    // 用于控制日志输出方式，例如可以通过该配置将日志输出到磁盘文件
+    // appendOnly: true,
+    // level: "verbose",
+  },
   externals: {
     //用于声明外部资源，Webpack 会直接忽略这部分资源，跳过这些资源的解析、打包操作
   },

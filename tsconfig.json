@@ -24,7 +24,8 @@
             ]
         },
         "preserveConstEnums": true, // 编译结果保留const定义的常量枚举 默认关闭
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
     },
     "include": [
         "./src/**/*"
