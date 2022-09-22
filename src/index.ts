@@ -1,5 +1,5 @@
 // import png from "src/assets/img/yanyunchangfeng.png";
-// import 'src/app/lesson1';
+import "src/app/lesson1";
 // import('src/app/lesson2');
 // import 'src/app/lesson3';
 import { fn1 } from "src/app/lesson4";

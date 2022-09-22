@@ -7,6 +7,11 @@
 你好，我是[燕云长风](https://yanyunchangfeng.github.io)。大漠穷秋于 2019-03-16 21:22 赠此笔名。  
 寓意：结合李白著名的边塞诗《关山月》取【燕云长风】—— 长风几万里，吹度玉门关。
 
+## 用法
+```
+   yarn or npm install 
+   yarn start or npm start
+```
 ## 这是 webpack5 新特性的学习实践
 
 1. [持久化缓存](./config/webpack.dev.js)
@@ -32,16 +37,16 @@
 9. [AsyncParallelBailHook](./src/app/lesson9/AsyncParallelBailHook.ts)
 10. [AsyncWaterfallHook](./src/app/lesson9/AsyncWaterfallHook.ts)
 
-# webpack 的工作流程
+## webpack 的工作流程
 
 [webpack flow](webpack.flow.js)  
 [webpack md](webpack.md)
 
-# 如何对 bundle 体积进行监控和分析
+## 如何对 bundle 体积进行监控和分析
 
 [webpack-bundle-analyzer](./config/webpack.common.js)
 
-# 如何提高 webpack 的构建速度
+## 如何提高 webpack 的构建速度
 
 [speed-measure-webpack-plugin](./config/webpack.common.js)
 [module.noParse](./config/webpack.common.js)  
@@ -50,34 +55,38 @@
 [thread-loader 多进程处理](./config/webpack.common.js)  
 [UnusedWebpackPlugin](./config/webpack.prod.js)
 
-# hash
+## hash
 
 [hash,chunkhash,contenthash](./webpack.md)  
 [source map](./webpack.md)
 
-# webpack 结构化图
+## webpack 结构化图
 
 [webpack 结构化配置图](./src/assets/img/webpack-structure.jpg)
 
-## 我的个人博客
+## 系列项目
 
-- [燕云长风](https://yanyunchangfeng.github.io)
+|  名称   | 描述  |
+|  ----  | ----  |
+| NiceFish（美人鱼）  | 这是一个系列项目，目标是示范前后端分离的开发模式:前端浏览器、移动端、Electron 环境中的各种开发模式。后端有两个版本：SpringBoot 版本和 SpringCloud 版本，http://git.oschina.net/mumu-osc/NiceFish/ |
+| NiceFish-React  |  这是 NiceFish 的 React 版本，基于React 18.0.0 ，使用 Antd、Inversify、 定制版 Bootstrap开发。  https://gitee.com/mumu-osc/NiceFish-React.git|
+| nicefish-ionic  | 这是一个移动端的 demo，基于 ionic，此项目已支持 PWA。http://git.oschina.net/mumu-osc/nicefish-ionic |
+| NiceBlogElectron  | 这是一个基于 Electron 的桌面端项目，把 NiceFish 用 Electron 打包成了一个桌面端运行的程序。这是由 ZTE 中兴通讯的前端道友提供的，我 fork 了一个，有几个 node 模块的版本号老要改，如果您正在研究如何利用 Electron 开发桌面端应用，请参考这个项目，https://github.com/damoqiongqiu/NiceBlogElectron|
+| OpenWMS  | 用来示范管理后台型系统的最佳实践，https://gitee.com/mumu-osc/OpenWMS-Frontend|
+| nicefish-springboot  | 用来示范前后端分离模式下，前端代码与后端服务的对接方式，已经完成了基线版本，并且在腾讯云上面做了实际的部署。代码仓库在这里： https://gitee.com/mumu-osc/nicefish-spring-boot ，腾讯云上的演示地址在这里： http://118.25.136.164 ，以此为基础，你可以继续开发出适合自己业务场景的代码。|
+| nicefish-springcloud  | 用来示范前后端分离模式下，前端代码与分布式后端服务的对接方式，即将完成，代码最近放出。|   
 
-## 我参与的系列项目
+## 打包分析
 
-1. [NiceFish](https://gitee.com/mumu-osc/NiceFish)：美人鱼，这是一个微型 Blog 系统，前端基于 Angular7.0 + PrimeNG7.1.0。（GVIP 码云最有价值的开源项目 5075 ☆)
-2. [NiceFish-React](https://gitee.com/mumu-osc/NiceFish-React)：这是 React 版的实现，和 NiceFish Angular 版本保持风格一致。采用 React Hooks 16.8.3 版本，使用 TypeScript、Ant Design 组件库以及 Bootstrap v4.2.1 开发。 (13 ☆)
-3. [OpenWMS-Frontend](https://gitee.com/mumu-osc/OpenWMS-Frontend)：OpenWMS 项目前端基于 Angular 7.0 + PrimeNG 7.1.0。 (已推荐 227 ☆)
-4. [nicefish-spring-cloud](https://gitee.com/mumu-osc/nicefish-spring-cloud)：这是 NiceFish 的服务端代码，基于 SpringCloud。已经完成了一些基本的功能，如 SpringSecurity+OAuth2+JWT 实现 SSO，文章、用户、评论等的分页查询等。如果你需要与这个后端代码进行对接，请检出本项目的 for-spring-cloud 分支。 (已推荐 155 ☆)
+```
+   yarn build-analyzer or npm run build-analyzer  
+```
 
-## 我的社交主页
+## 社交主页
 
-1. [燕云长风知乎](https://zhihu.com/people/hbxyxuxiaodong)
-2. [燕云长风知乎专栏](https://zhuanlan.zhihu.com/yanyunchangfeng)
-3. [燕云长风 github](https://github.com/yanyunchangfeng)
-4. [燕云长风 gitee](https://gitee.com/yanyunchangfeng)
-5. [燕云长风 twitter](https://twitter.com/yanyunchangfeng)
-6. [燕云长风 medium](https://medium.com/@yanyunchangfeng)
+1. [燕云长风 github](https://github.com/yanyunchangfeng)
+2. [燕云长风 gitee](https://gitee.com/yanyunchangfeng)
+3. [燕云长风知乎](https://zhihu.com/people/hbxyxuxiaodong)
 
 ## 开源许可证
 

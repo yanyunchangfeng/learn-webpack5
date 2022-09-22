@@ -1,6 +1,5 @@
 const path = require("path");
 const htmlWebpackPlugin = require("html-webpack-plugin");
-const HelloWorldPlugin = require("./helloworld");
 const CopyPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
@@ -54,11 +53,13 @@ module.exports = {
           cacheGroups: {
             //设置缓存组用来抽取满足不同规则的chunk，下面以生成common为例
             vendors: {
+              chunks: "all",
               test: /node_modules/, //条件
               reuseExistingChunk: true,
               priority: -10, //优先级，一个chunk很可能满足多个缓存组，会被抽取到优先级高的缓存组中，为了能够让自定义缓存组有更高的优先级
             },
             commons: {
+              chunks: "all",
               minChunks: 2, //最少被几个chunk引用
               priority: -20,
               reuseExistingChunk: true, //如果该chunk中引用了已经被抽取的chunk，直接引用该chunk，不会重复打包代码
@@ -70,7 +71,6 @@ module.exports = {
     minimize: isDev ? false : true, //关闭代码压缩;
     concatenateModules: isDev ? false : true, //关闭模块合并;
     usedExports: isDev ? false : true, //关闭 Tree-shaking 功能； // 标记使用到的导出
-    //  Tree-shaking   最大粒度优化需要在package.json中配置 "sideEffects":false, 如果是css文件 需要配置sideEffects:["*.css"] // js 就是纯函数 没有副作用 css的话是有副作用
     minimizer: [
       // Webpack5 之后，约定使用 `'...'` 字面量保留默认 `minimizer` 配置
       "...",
@@ -95,7 +95,7 @@ module.exports = {
   resolve: {
     // 用于配置模块路径解析规则，可用于帮助Webpack更精确、高效地找到指定模块
     modules: [path.resolve("node_modules")], // 解析第三方包
-    extensions: [".js", ".ts", ".tsx", ".css", ".less", ".scss", ".json"], // 文件后缀名 先后顺序查找
+    extensions: [".ts", ".tsx", ".js", ".css", ".less", ".scss", ".json"], // 文件后缀名 先后顺序查找
     mainFields: ["browser", "module", "main", "style"], // eg: bootstrap 先找package.json 的style字段 没有的话再找main字段
     mainFiles: ["index"], // 入口文件的名字 默认是index
     alias: {
@@ -234,7 +234,7 @@ module.exports = {
     }),
     isAnalyzerMode
       ? new BundleAnalyzerPlugin({
-          analyzerMode: "server", // 不启动展示打包报告的http服务器
+          analyzerMode: "server", // 启动展示打包报告的http服务器
           generateStatsFile: true, // 是否生成stats.json文件
         })
       : noop,
@@ -256,7 +256,6 @@ module.exports = {
     new FriendlyErrorsWebpackPlugin(),
     // .日志太多太少都不美观
     // .可以修改stats
-    new HelloWorldPlugin(),
     !isDev
       ? new CopyPlugin({
           patterns: [

@@ -13,14 +13,13 @@
         ],
         "sourceMap": true,
         "jsx": "react",
-        "typeRoots": [
-            "./node_modules/@types",
-            "./src/@types"
-        ],
-        "baseUrl": ".",
+        "baseUrl": "./",
         "paths": {
             "src/*": [
-                "./src/*"
+                "src/*"
+            ],
+            "*":[
+                "src/types/*"
             ]
         },
         "preserveConstEnums": true, // 编译结果保留const定义的常量枚举 默认关闭
@@ -28,6 +27,7 @@
         "emitDecoratorMetadata": true
     },
     "include": [
-        "./src/**/*"
+        "src/**/*",
+        "src/typings/**/*"
     ]
 }
